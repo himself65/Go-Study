@@ -19,22 +19,10 @@ class NewPageViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        
-    }
-    
-    private func notice(title: String) {
-        let alertController = UIAlertController (title: title, message: "", preferredStyle: .alert)
-        self.present(
-            alertController,
-            animated: true,
-            completion: nil)
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
-            alertController.dismiss(animated: false, completion: nil)
-        }
     }
     
     private func exit() {
-        print("正在退出")
+        print("正在退出新建页面")
         self.dismiss(animated: true, completion: nil)
     }
     
@@ -47,9 +35,7 @@ class NewPageViewController: UIViewController {
         if nameTextField.text != "" {
             exit()
         } else {
-            notice(title: "请输入")
+            self.noticeError("请检查输入", autoClear: true, autoClearTime: 1)
         }
-        
     }
-    
 }

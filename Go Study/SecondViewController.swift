@@ -78,5 +78,4 @@ extension SecondViewController: UITableViewDataSource, UITableViewDelegate {
         cell.textLabel?.text = ans[indexPath.row]
         return cell
     }
-    
 }
