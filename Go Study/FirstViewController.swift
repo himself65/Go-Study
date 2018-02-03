@@ -13,7 +13,6 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var countLabel: UILabel!
     @IBOutlet weak var countStepper: UIStepper!
     @IBOutlet weak var resetButton: UIButton!;
-    
     //
     let libraryPath = NSHomeDirectory() + "/Library"
     let userStandard = UserDefaults.standard
@@ -52,7 +51,7 @@ class FirstViewController: UIViewController {
     }
     
     @IBAction func resetAll(_ sender: Any) {
-        let alert = alertShow("你确定要删除所有设置吗？", message: "真的吗？", style: .alert, leftContent: ActionContent(title: "取消", style: .cancel, handler: nil), rightContent: ActionContent(title: "确定", style: .default, handler: {clickHandler in
+        let alert = alertShow("你确定要删除所有设置吗？", message: "真的吗？", style: .alert, leftContent: ActionContent(title: "取消", style: .cancel, handler: nil), rightContent: ActionContent(title: "确定", style: .destructive, handler: {clickHandler in
             let dic = self.userStandard.dictionaryRepresentation()
             for item in dic {
                 self.userStandard.removeObject(forKey: item.key)
