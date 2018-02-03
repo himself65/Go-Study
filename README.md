@@ -1,6 +1,6 @@
 # Go Study
 
-![process](http://progressed.io/bar/59?title=completed)
+![process](http://progressed.io/bar/3?title=completed)
 
 须知：
 **此项目已参加 第十九届“中国移动”和教育“杯” 全国中小学生电脑制作活动，切勿侵权，谢谢**
