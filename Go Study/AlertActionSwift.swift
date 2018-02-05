@@ -26,6 +26,17 @@ struct ActionContent {
 class SwiftAlertAction: NSObject {
     
     @discardableResult
+    static func alertActionDefault(_ title: String, message: String, leftTitle: String, rightTitle: String, leftHandler:((UIAlertAction) -> Void)? , rightHandler:((UIAlertAction) -> Void)?) -> UIAlertController {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let leftAction = UIAlertAction(title: leftTitle, style: .cancel, handler: leftHandler)
+        let rightAction = UIAlertAction(title: rightTitle, style: .destructive, handler: rightHandler)
+        alertController.addAction(leftAction)
+        alertController.addAction(rightAction)
+        
+        return alertController
+    }
+    
+    @discardableResult
     static func alertAction(_ title: String, message: String, style: UIAlertControllerStyle, leftContent: ActionContent, rightContent: ActionContent) -> UIAlertController {
         
         let alertController = UIAlertController(title: title, message: message, preferredStyle: style)
