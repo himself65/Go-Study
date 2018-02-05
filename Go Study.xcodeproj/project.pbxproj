@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA6F1D342028A6810038E829 /* CountDownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6F1D332028A6810038E829 /* CountDownViewController.swift */; };
 		EA7EFAC020221A50003ADDA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7EFABF20221A50003ADDA5 /* AppDelegate.swift */; };
 		EA7EFAC220221A50003ADDA5 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7EFAC120221A50003ADDA5 /* FirstViewController.swift */; };
 		EA7EFAC420221A50003ADDA5 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7EFAC320221A50003ADDA5 /* SecondViewController.swift */; };
@@ -19,10 +20,10 @@
 		EACE7671202228900009154C /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACE7670202228900009154C /* SearchBar.swift */; };
 		EACE767520222B5C0009154C /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EACE767420222B5C0009154C /* HealthKit.framework */; };
 		EACE767B20233B610009154C /* NewPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACE767A20233B610009154C /* NewPageViewController.swift */; };
-		EAD109AD20242CBC001B950F /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EAD109AC20242CBC001B950F /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA6F1D332028A6810038E829 /* CountDownViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownViewController.swift; sourceTree = "<group>"; };
 		EA7EFABC20221A50003ADDA5 /* Go Study.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Go Study.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA7EFABF20221A50003ADDA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA7EFAC120221A50003ADDA5 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -38,7 +39,6 @@
 		EACE767220222B5C0009154C /* Go Study.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Go Study.entitlements"; sourceTree = "<group>"; };
 		EACE767420222B5C0009154C /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		EACE767A20233B610009154C /* NewPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPageViewController.swift; sourceTree = "<group>"; };
-		EAD109AC20242CBC001B950F /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +53,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EA6F1D352028A68A0038E829 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EA7EFAC120221A50003ADDA5 /* FirstViewController.swift */,
+				EA7EFAC320221A50003ADDA5 /* SecondViewController.swift */,
+				EACE767A20233B610009154C /* NewPageViewController.swift */,
+				EA6F1D332028A6810038E829 /* CountDownViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		EA6F1D372028A6B80038E829 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EACE7670202228900009154C /* SearchBar.swift */,
+				EACDB5F32025E67400A2C6A8 /* KeyBoard.swift */,
+				EACDB5EF2024760E00A2C6A8 /* Notice.swift */,
+				EACDB5F120249CBB00A2C6A8 /* AlertActionSwift.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		EA7EFAB320221A50003ADDA5 = {
 			isa = PBXGroup;
 			children = (
@@ -73,20 +95,14 @@
 		EA7EFABE20221A50003ADDA5 /* Go Study */ = {
 			isa = PBXGroup;
 			children = (
-				EACDB5EF2024760E00A2C6A8 /* Notice.swift */,
-				EACDB5F120249CBB00A2C6A8 /* AlertActionSwift.swift */,
+				EA6F1D372028A6B80038E829 /* Extension */,
+				EA6F1D352028A68A0038E829 /* ViewController */,
 				EACE767220222B5C0009154C /* Go Study.entitlements */,
 				EA7EFABF20221A50003ADDA5 /* AppDelegate.swift */,
-				EA7EFAC120221A50003ADDA5 /* FirstViewController.swift */,
-				EA7EFAC320221A50003ADDA5 /* SecondViewController.swift */,
-				EACE767A20233B610009154C /* NewPageViewController.swift */,
-				EACDB5F32025E67400A2C6A8 /* KeyBoard.swift */,
 				EA7EFAC520221A50003ADDA5 /* Main.storyboard */,
-				EACE7670202228900009154C /* SearchBar.swift */,
 				EA7EFAC820221A50003ADDA5 /* Assets.xcassets */,
 				EA7EFACA20221A50003ADDA5 /* LaunchScreen.storyboard */,
 				EA7EFACD20221A50003ADDA5 /* Info.plist */,
-				EAD109AC20242CBC001B950F /* Settings.bundle */,
 			);
 			path = "Go Study";
 			sourceTree = "<group>";
@@ -163,7 +179,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAD109AD20242CBC001B950F /* Settings.bundle in Resources */,
 				EA7EFACC20221A50003ADDA5 /* LaunchScreen.storyboard in Resources */,
 				EA7EFAC920221A50003ADDA5 /* Assets.xcassets in Resources */,
 				EA7EFAC720221A50003ADDA5 /* Main.storyboard in Resources */,
@@ -183,6 +198,7 @@
 				EA7EFAC420221A50003ADDA5 /* SecondViewController.swift in Sources */,
 				EACE7671202228900009154C /* SearchBar.swift in Sources */,
 				EACDB5F02024760E00A2C6A8 /* Notice.swift in Sources */,
+				EA6F1D342028A6810038E829 /* CountDownViewController.swift in Sources */,
 				EA7EFAC020221A50003ADDA5 /* AppDelegate.swift in Sources */,
 				EA7EFAC220221A50003ADDA5 /* FirstViewController.swift in Sources */,
 			);

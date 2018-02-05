@@ -28,7 +28,6 @@ class FirstViewController: UIViewController {
             firstLaunch()
             userStandard.set(true, forKey: "launched")
         }
-        
         super.viewDidLoad()
         reShow()
     }
