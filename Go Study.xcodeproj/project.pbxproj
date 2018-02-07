@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA11652C202B0323007240B1 /* SettingScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA11652B202B0323007240B1 /* SettingScreen.storyboard */; };
 		EA6F1D342028A6810038E829 /* CountDownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6F1D332028A6810038E829 /* CountDownViewController.swift */; };
+		EA6F1D3F202979F30038E829 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6F1D3E202979F30038E829 /* SettingViewController.swift */; };
+		EA6F1D4620297BB60038E829 /* User.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA6F1D4420297BB60038E829 /* User.xcdatamodeld */; };
+		EA6F1D64202A20ED0038E829 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6F1D63202A20ED0038E829 /* CoreDataManager.swift */; };
 		EA7EFAC020221A50003ADDA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7EFABF20221A50003ADDA5 /* AppDelegate.swift */; };
 		EA7EFAC220221A50003ADDA5 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7EFAC120221A50003ADDA5 /* FirstViewController.swift */; };
 		EA7EFAC420221A50003ADDA5 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7EFAC320221A50003ADDA5 /* SecondViewController.swift */; };
@@ -23,7 +27,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA11652B202B0323007240B1 /* SettingScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingScreen.storyboard; sourceTree = "<group>"; };
 		EA6F1D332028A6810038E829 /* CountDownViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownViewController.swift; sourceTree = "<group>"; };
+		EA6F1D3E202979F30038E829 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		EA6F1D4520297BB60038E829 /* User.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = User.xcdatamodel; sourceTree = "<group>"; };
+		EA6F1D63202A20ED0038E829 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		EA7EFABC20221A50003ADDA5 /* Go Study.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Go Study.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA7EFABF20221A50003ADDA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA7EFAC120221A50003ADDA5 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -53,18 +61,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		EA6F1D352028A68A0038E829 /* ViewController */ = {
+		EA6F1D352028A68A0038E829 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				EA7EFAC120221A50003ADDA5 /* FirstViewController.swift */,
 				EA7EFAC320221A50003ADDA5 /* SecondViewController.swift */,
 				EACE767A20233B610009154C /* NewPageViewController.swift */,
 				EA6F1D332028A6810038E829 /* CountDownViewController.swift */,
+				EA6F1D3E202979F30038E829 /* SettingViewController.swift */,
 			);
-			path = ViewController;
+			path = Controller;
 			sourceTree = "<group>";
 		};
-		EA6F1D372028A6B80038E829 /* Extension */ = {
+		EA6F1D372028A6B80038E829 /* Common */ = {
 			isa = PBXGroup;
 			children = (
 				EACE7670202228900009154C /* SearchBar.swift */,
@@ -72,7 +81,27 @@
 				EACDB5EF2024760E00A2C6A8 /* Notice.swift */,
 				EACDB5F120249CBB00A2C6A8 /* AlertActionSwift.swift */,
 			);
-			path = Extension;
+			path = Common;
+			sourceTree = "<group>";
+		};
+		EA6F1D39202964BC0038E829 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EA7EFAC520221A50003ADDA5 /* Main.storyboard */,
+				EA7EFACA20221A50003ADDA5 /* LaunchScreen.storyboard */,
+				EA11652B202B0323007240B1 /* SettingScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EA6F1D3A202971070038E829 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EA6F1D4420297BB60038E829 /* User.xcdatamodeld */,
+				EA6F1D63202A20ED0038E829 /* CoreDataManager.swift */,
+			);
+			name = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		EA7EFAB320221A50003ADDA5 = {
@@ -95,13 +124,13 @@
 		EA7EFABE20221A50003ADDA5 /* Go Study */ = {
 			isa = PBXGroup;
 			children = (
-				EA6F1D372028A6B80038E829 /* Extension */,
-				EA6F1D352028A68A0038E829 /* ViewController */,
+				EA6F1D3A202971070038E829 /* Model */,
+				EA6F1D39202964BC0038E829 /* View */,
+				EA6F1D372028A6B80038E829 /* Common */,
+				EA6F1D352028A68A0038E829 /* Controller */,
 				EACE767220222B5C0009154C /* Go Study.entitlements */,
 				EA7EFABF20221A50003ADDA5 /* AppDelegate.swift */,
-				EA7EFAC520221A50003ADDA5 /* Main.storyboard */,
 				EA7EFAC820221A50003ADDA5 /* Assets.xcassets */,
-				EA7EFACA20221A50003ADDA5 /* LaunchScreen.storyboard */,
 				EA7EFACD20221A50003ADDA5 /* Info.plist */,
 			);
 			path = "Go Study";
@@ -180,6 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA7EFACC20221A50003ADDA5 /* LaunchScreen.storyboard in Resources */,
+				EA11652C202B0323007240B1 /* SettingScreen.storyboard in Resources */,
 				EA7EFAC920221A50003ADDA5 /* Assets.xcassets in Resources */,
 				EA7EFAC720221A50003ADDA5 /* Main.storyboard in Resources */,
 			);
@@ -193,11 +223,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				EACDB5F220249CBB00A2C6A8 /* AlertActionSwift.swift in Sources */,
+				EA6F1D3F202979F30038E829 /* SettingViewController.swift in Sources */,
 				EACE767B20233B610009154C /* NewPageViewController.swift in Sources */,
 				EACDB5F42025E67400A2C6A8 /* KeyBoard.swift in Sources */,
 				EA7EFAC420221A50003ADDA5 /* SecondViewController.swift in Sources */,
 				EACE7671202228900009154C /* SearchBar.swift in Sources */,
+				EA6F1D64202A20ED0038E829 /* CoreDataManager.swift in Sources */,
 				EACDB5F02024760E00A2C6A8 /* Notice.swift in Sources */,
+				EA6F1D4620297BB60038E829 /* User.xcdatamodeld in Sources */,
 				EA6F1D342028A6810038E829 /* CountDownViewController.swift in Sources */,
 				EA7EFAC020221A50003ADDA5 /* AppDelegate.swift in Sources */,
 				EA7EFAC220221A50003ADDA5 /* FirstViewController.swift in Sources */,
@@ -387,6 +420,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EA6F1D4420297BB60038E829 /* User.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EA6F1D4520297BB60038E829 /* User.xcdatamodel */,
+			);
+			currentVersion = EA6F1D4520297BB60038E829 /* User.xcdatamodel */;
+			name = User.xcdatamodeld;
+			path = ../../../../Documents/User.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = EA7EFAB420221A50003ADDA5 /* Project object */;
 }

@@ -88,10 +88,10 @@
             </objects>
             <point key="canvasLocation" x="748.125" y="-321.12676056338029"/>
         </scene>
-        <!--New Page View Controller-->
+        <!--新建-->
         <scene sceneID="aKa-g8-0J0">
             <objects>
-                <viewController id="TOr-CF-6eE" customClass="NewPageViewController" customModule="Go_Study" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="TOr-CF-6eE" userLabel="新建" customClass="NewPageViewController" customModule="Go_Study" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EcS-dY-RUq">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -211,21 +211,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="744.375" y="357.04225352112678"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="s3K-HM-6B0">
-            <objects>
-                <viewController id="Zqi-Ra-1pl" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Cnh-T6-aUU">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="duZ-Ke-8hm"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="L8s-t3-RhZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1726" y="262"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">

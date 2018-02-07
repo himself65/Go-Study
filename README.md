@@ -2,6 +2,8 @@
 
 ![process](http://progressed.io/bar/5?title=completed)
 
+[![Build Status](https://travis-ci.org/Himself65/Go-Study.svg?branch=master)](https://travis-ci.org/Himself65/Go-Study)
+
 须知：
 **此项目已参加 第十九届“中国移动”和教育“杯” 全国中小学生电脑制作活动，切勿侵权，谢谢**
 
