@@ -10,6 +10,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--SettingScreen-->
+        <scene sceneID="ctx-NJ-yBN">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SettingScreen" id="nBQ-pc-eQp" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="IT8-bP-4Hy"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JeC-35-hxc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="560" y="-709"/>
+        </scene>
         <!--主页-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
@@ -37,7 +47,11 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Title" id="JAj-Na-Dal">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="E4C-aC-g79"/>
+                                        <barButtonItem key="leftBarButtonItem" title="设置" id="hUd-5H-WhS">
+                                            <connections>
+                                                <segue destination="nBQ-pc-eQp" kind="show" id="mpq-U6-qvw"/>
+                                            </connections>
+                                        </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="5vL-4w-VSo">
                                             <connections>
                                                 <segue destination="TOr-CF-6eE" kind="show" id="v8n-Cn-gzw"/>

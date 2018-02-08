@@ -10,34 +10,48 @@ import UIKit
 import CoreData
 
 class SettingViewController: UIViewController {
+
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var nameLabel: UILabel!
     
-    @IBOutlet weak var returnButton: UIBarButtonItem!
-    @IBOutlet weak var scrollView: UIScrollView!
-    
-    static let shared = CoreDataManager()
-    lazy var context: NSManagedObjectContext = {
-        let context = ((UIApplication.shared.delegate) as! AppDelegate).context
-        return context
-    }()
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    var managedObectContext: NSManagedObjectContext?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        registerSettingsBundle()
+        NotificationCenter.default.addObserver(self, selector: #selector(SettingViewController.defaultsChanged), name: UserDefaults.didChangeNotification, object: nil)
+        defaultsChanged()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        let request: NSFetchRequest = User.fetchRequest()
         
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        
+    func registerSettingsBundle(){
+        let appDefaults = [String:AnyObject]()
+        UserDefaults.standard.register(defaults: appDefaults)
+    }
+    @objc func defaultsChanged(){
+        if UserDefaults.standard.bool(forKey: "RedThemeKey") {
+            self.view.backgroundColor = UIColor.red
+        }
+        else {
+            self.view.backgroundColor = UIColor.green
+        }
     }
     
-    @IBAction func exitThisPage(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+    deinit {
+        NotificationCenter.default.removeObserver(self)
     }
     
+    @IBAction func cancel() {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func saveAndExit() {
+        noticeTop("Success")
+        dismiss(animated: true, completion: nil)
+    }
 }

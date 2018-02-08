@@ -11,19 +11,23 @@
 		EA6F1D342028A6810038E829 /* CountDownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6F1D332028A6810038E829 /* CountDownViewController.swift */; };
 		EA6F1D3F202979F30038E829 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6F1D3E202979F30038E829 /* SettingViewController.swift */; };
 		EA6F1D4620297BB60038E829 /* User.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA6F1D4420297BB60038E829 /* User.xcdatamodeld */; };
-		EA6F1D64202A20ED0038E829 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6F1D63202A20ED0038E829 /* CoreDataManager.swift */; };
 		EA7EFAC020221A50003ADDA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7EFABF20221A50003ADDA5 /* AppDelegate.swift */; };
 		EA7EFAC220221A50003ADDA5 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7EFAC120221A50003ADDA5 /* FirstViewController.swift */; };
 		EA7EFAC420221A50003ADDA5 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7EFAC320221A50003ADDA5 /* SecondViewController.swift */; };
 		EA7EFAC720221A50003ADDA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA7EFAC520221A50003ADDA5 /* Main.storyboard */; };
 		EA7EFAC920221A50003ADDA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA7EFAC820221A50003ADDA5 /* Assets.xcassets */; };
 		EA7EFACC20221A50003ADDA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA7EFACA20221A50003ADDA5 /* LaunchScreen.storyboard */; };
+		EAC5A5FB202C99660062AB29 /* FirstLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAC5A5FA202C99660062AB29 /* FirstLaunchScreen.storyboard */; };
+		EAC5A5FD202C9CFD0062AB29 /* StaticContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC5A5FC202C9CFD0062AB29 /* StaticContent.swift */; };
 		EACDB5F02024760E00A2C6A8 /* Notice.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACDB5EF2024760E00A2C6A8 /* Notice.swift */; };
 		EACDB5F220249CBB00A2C6A8 /* AlertActionSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACDB5F120249CBB00A2C6A8 /* AlertActionSwift.swift */; };
 		EACDB5F42025E67400A2C6A8 /* KeyBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACDB5F32025E67400A2C6A8 /* KeyBoard.swift */; };
 		EACE7671202228900009154C /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACE7670202228900009154C /* SearchBar.swift */; };
 		EACE767520222B5C0009154C /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EACE767420222B5C0009154C /* HealthKit.framework */; };
 		EACE767B20233B610009154C /* NewPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACE767A20233B610009154C /* NewPageViewController.swift */; };
+		EAEEB051202C595100F28C99 /* StydyData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EAEEB04F202C595100F28C99 /* StydyData.xcdatamodeld */; };
+		EAEEB056202C6D5900F28C99 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EAEEB055202C6D5900F28C99 /* Settings.bundle */; };
+		EAEEB079202C8AAB00F28C99 /* SettingBundleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEEB078202C8AAB00F28C99 /* SettingBundleHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +35,6 @@
 		EA6F1D332028A6810038E829 /* CountDownViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownViewController.swift; sourceTree = "<group>"; };
 		EA6F1D3E202979F30038E829 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		EA6F1D4520297BB60038E829 /* User.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = User.xcdatamodel; sourceTree = "<group>"; };
-		EA6F1D63202A20ED0038E829 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		EA7EFABC20221A50003ADDA5 /* Go Study.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Go Study.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA7EFABF20221A50003ADDA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA7EFAC120221A50003ADDA5 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -40,6 +43,8 @@
 		EA7EFAC820221A50003ADDA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA7EFACB20221A50003ADDA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA7EFACD20221A50003ADDA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAC5A5FA202C99660062AB29 /* FirstLaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FirstLaunchScreen.storyboard; sourceTree = "<group>"; };
+		EAC5A5FC202C9CFD0062AB29 /* StaticContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticContent.swift; sourceTree = "<group>"; };
 		EACDB5EF2024760E00A2C6A8 /* Notice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notice.swift; sourceTree = "<group>"; };
 		EACDB5F120249CBB00A2C6A8 /* AlertActionSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertActionSwift.swift; sourceTree = "<group>"; };
 		EACDB5F32025E67400A2C6A8 /* KeyBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyBoard.swift; sourceTree = "<group>"; };
@@ -47,6 +52,9 @@
 		EACE767220222B5C0009154C /* Go Study.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Go Study.entitlements"; sourceTree = "<group>"; };
 		EACE767420222B5C0009154C /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		EACE767A20233B610009154C /* NewPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPageViewController.swift; sourceTree = "<group>"; };
+		EAEEB050202C595100F28C99 /* StydyData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StydyData.xcdatamodel; sourceTree = "<group>"; };
+		EAEEB055202C6D5900F28C99 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		EAEEB078202C8AAB00F28C99 /* SettingBundleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingBundleHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +88,8 @@
 				EACDB5F32025E67400A2C6A8 /* KeyBoard.swift */,
 				EACDB5EF2024760E00A2C6A8 /* Notice.swift */,
 				EACDB5F120249CBB00A2C6A8 /* AlertActionSwift.swift */,
+				EAEEB078202C8AAB00F28C99 /* SettingBundleHelper.swift */,
+				EAC5A5FC202C9CFD0062AB29 /* StaticContent.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -88,8 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				EA7EFAC520221A50003ADDA5 /* Main.storyboard */,
-				EA7EFACA20221A50003ADDA5 /* LaunchScreen.storyboard */,
 				EA11652B202B0323007240B1 /* SettingScreen.storyboard */,
+				EAC5A5FA202C99660062AB29 /* FirstLaunchScreen.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -98,7 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				EA6F1D4420297BB60038E829 /* User.xcdatamodeld */,
-				EA6F1D63202A20ED0038E829 /* CoreDataManager.swift */,
+				EAEEB04F202C595100F28C99 /* StydyData.xcdatamodeld */,
 			);
 			name = Model;
 			path = Models;
@@ -132,6 +142,8 @@
 				EA7EFABF20221A50003ADDA5 /* AppDelegate.swift */,
 				EA7EFAC820221A50003ADDA5 /* Assets.xcassets */,
 				EA7EFACD20221A50003ADDA5 /* Info.plist */,
+				EA7EFACA20221A50003ADDA5 /* LaunchScreen.storyboard */,
+				EAEEB055202C6D5900F28C99 /* Settings.bundle */,
 			);
 			path = "Go Study";
 			sourceTree = "<group>";
@@ -208,8 +220,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAC5A5FB202C99660062AB29 /* FirstLaunchScreen.storyboard in Resources */,
 				EA7EFACC20221A50003ADDA5 /* LaunchScreen.storyboard in Resources */,
 				EA11652C202B0323007240B1 /* SettingScreen.storyboard in Resources */,
+				EAEEB056202C6D5900F28C99 /* Settings.bundle in Resources */,
 				EA7EFAC920221A50003ADDA5 /* Assets.xcassets in Resources */,
 				EA7EFAC720221A50003ADDA5 /* Main.storyboard in Resources */,
 			);
@@ -225,11 +239,13 @@
 				EACDB5F220249CBB00A2C6A8 /* AlertActionSwift.swift in Sources */,
 				EA6F1D3F202979F30038E829 /* SettingViewController.swift in Sources */,
 				EACE767B20233B610009154C /* NewPageViewController.swift in Sources */,
+				EAC5A5FD202C9CFD0062AB29 /* StaticContent.swift in Sources */,
 				EACDB5F42025E67400A2C6A8 /* KeyBoard.swift in Sources */,
 				EA7EFAC420221A50003ADDA5 /* SecondViewController.swift in Sources */,
 				EACE7671202228900009154C /* SearchBar.swift in Sources */,
-				EA6F1D64202A20ED0038E829 /* CoreDataManager.swift in Sources */,
+				EAEEB051202C595100F28C99 /* StydyData.xcdatamodeld in Sources */,
 				EACDB5F02024760E00A2C6A8 /* Notice.swift in Sources */,
+				EAEEB079202C8AAB00F28C99 /* SettingBundleHelper.swift in Sources */,
 				EA6F1D4620297BB60038E829 /* User.xcdatamodeld in Sources */,
 				EA6F1D342028A6810038E829 /* CountDownViewController.swift in Sources */,
 				EA7EFAC020221A50003ADDA5 /* AppDelegate.swift in Sources */,
@@ -430,6 +446,16 @@
 			currentVersion = EA6F1D4520297BB60038E829 /* User.xcdatamodel */;
 			name = User.xcdatamodeld;
 			path = ../../../../Documents/User.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		EAEEB04F202C595100F28C99 /* StydyData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EAEEB050202C595100F28C99 /* StydyData.xcdatamodel */,
+			);
+			currentVersion = EAEEB050202C595100F28C99 /* StydyData.xcdatamodel */;
+			path = StydyData.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

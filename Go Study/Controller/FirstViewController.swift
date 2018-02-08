@@ -15,19 +15,13 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var resetButton: UIButton!
     @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var finishButton: UIButton!
-    //
-    let libraryPath = NSHomeDirectory() + "/Library"
+    
     let userStandard = UserDefaults.standard
-    let fullScreenSize = UIScreen.main.bounds.size
-    // data
+    
     var count = 0 // test
     var time: TimeInterval?
     
     override func viewDidLoad() {
-        if !userStandard.bool(forKey: "launched") {
-            firstLaunch()
-            userStandard.set(true, forKey: "launched")
-        }
         super.viewDidLoad()
         reShow()
     }
@@ -35,10 +29,6 @@ class FirstViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
-    }
-    
-    private func firstLaunch() {
-        print("首次登陆")
     }
     
     private func reShow() {
