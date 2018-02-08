@@ -1,11 +1,11 @@
 # Go Study
 
-![process](http://progressed.io/bar/5?title=completed)
+![process](http://progressed.io/bar/8?title=process)
 
 [![Build Status](https://travis-ci.org/Himself65/Go-Study.svg?branch=master)](https://travis-ci.org/Himself65/Go-Study)
 
 须知：
-**此项目已参加 第十九届“中国移动”和教育“杯” 全国中小学生电脑制作活动，切勿侵权，谢谢**
+**此项目已参加 第十九届“中国移动”和教育“杯” 全国中小学生电脑制作活动**
 
 是不是在写作业时候总想看看手机？是不是学习了一天觉得没有什么成果，这个软件记录你每日的学习，让你在点滴中进步
 
@@ -22,6 +22,18 @@
 · 图表统计，可以分享给你的朋友圈
 
 当然，以上内容还在开发当中
+
+## 项目进度
+
+- ~~基本设计~~
+
+- 逻辑代码
+
+- UI设计
+
+- 功能要求
+
+- 代码优化
 
 ## 联系我
 
