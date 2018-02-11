@@ -18,7 +18,7 @@
 			<key>Title</key>
 			<string>夜间模式</string>
 			<key>Key</key>
-			<string>RESET_APP_KEY</string>
+			<string>dark_app</string>
 			<key>DefaultValue</key>
 			<false/>
 		</dict>

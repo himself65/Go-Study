@@ -10,31 +10,21 @@ import UIKit
 
 class FirstViewController: UIViewController {
     
-    @IBOutlet weak var countLabel: UILabel!
-    @IBOutlet weak var countStepper: UIStepper!
     @IBOutlet weak var resetButton: UIButton!
     @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var finishButton: UIButton!
     
     let userStandard = UserDefaults.standard
-    
-    var count = 0 // test
     var time: TimeInterval?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        reShow()
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
-    }
-    
-    private func reShow() {
-        count = UserDefaults.standard.integer(forKey: "cc")
-        countLabel.text = String(count)
-        countStepper.value = Double(count)
     }
     
     @IBAction func finish(_ sender: Any) {
@@ -49,13 +39,6 @@ class FirstViewController: UIViewController {
         }
     }
     
-    @IBAction func changedValue(_ sender: Any) {
-        let button = sender as! UIStepper
-        count = Int(button.value)
-        countLabel.text = String(count)
-        userStandard.set(count, forKey: "cc")
-    }
-    
     @IBAction func resetAll(_ sender: Any) {
         let alert = alertShow("你确定要删除所有设置吗？", message: "真的吗？", style: .alert, leftContent: ActionContent(title: "取消", style: .cancel, handler: nil), rightContent: ActionContent(title: "确定", style: .destructive, handler:
         {
@@ -65,7 +48,6 @@ class FirstViewController: UIViewController {
                 self.userStandard.removeObject(forKey: item.key)
             }
             self.userStandard.synchronize()
-            self.reShow()
         }))
         self.present(alert, animated: true, completion: nil)
     }
