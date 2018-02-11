@@ -1,6 +1,6 @@
 # Go Study
 
-![process](http://progressed.io/bar/8?title=process)
+![process](http://progressed.io/bar/15?title=process)
 
 [![Build Status](https://travis-ci.org/Himself65/Go-Study.svg?branch=master)](https://travis-ci.org/Himself65/Go-Study)
 
