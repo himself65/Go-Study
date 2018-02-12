@@ -35,7 +35,7 @@
                                     <navigationItem title="Title" id="JAj-Na-Dal">
                                         <barButtonItem key="leftBarButtonItem" image="setting" id="hUd-5H-WhS">
                                             <connections>
-                                                <segue destination="nBQ-pc-eQp" kind="show" id="mpq-U6-qvw"/>
+                                                <segue destination="nBQ-pc-eQp" kind="showDetail" id="gXq-eX-74N"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="5vL-4w-VSo">

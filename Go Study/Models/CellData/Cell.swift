@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import CoreData
 
 enum CellStyle{
     case defaultStyle
@@ -34,23 +35,32 @@ func getSettingData() -> [[DefaultCell]] {
     var data = Array<Array<DefaultCell>>()
     var itemOne = Array<DefaultCell>()
     var itemTwo = Array<DefaultCell>()
+    var itemThree = Array<DefaultCell>()
     
-    itemOne.append(TextCell(label: "姓名", info: "这里填入你的姓名", text: "Himself65"))
-    itemOne.append(NumberCell(label: "年龄", info: "填入你的年龄", num: 0))
+    let userStandard = StaticContent.userDefault
+    let userName: String = userStandard.string(forKey: "userName")!
+    let userAge: Int = userStandard.integer(forKey: "userAge")
+    
+    itemOne.append(TextCell(label: "姓名", info: "这里填入你的姓名", text: userName))
+    itemOne.append(NumberCell(label: "年龄", info: "填入你的年龄", num: userAge))
     itemOne.append(SwitchCell(label: "性别", info: "是男是女", isTrue: false))
     //
-    itemTwo.append(SwitchCell(label: "夜间模式", info: "神说要有夜间模式", isTrue: false))
-    itemTwo.append(DefaultCell(label: "关于"))
+    let darkTheme: Bool = userStandard.bool(forKey: "dark_theme")
+    itemTwo.append(SwitchCell(label: "夜间模式", info: "神说要有夜间模式", isTrue: darkTheme))
+    //
+    itemThree.append(DefaultCell(label: "关于"))
     //
     data.append(itemOne)
     data.append(itemTwo)
+    data.append(itemThree)
     return data
 }
 
 func getGroupData() -> [String] {
     var data = Array<String>()
     data.append("基本设置")
-    data.append("其他")
+    data.append("个性化")
+    data.append("更多")
     
     return data
 }

@@ -54,7 +54,6 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="leftLabel" destination="vAC-GR-cWs" id="bpI-6K-ZP8"/>
-                                            <segue destination="DBW-7W-b4p" kind="show" id="QHs-eZ-G7X"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="numberCell" id="8xk-7Y-UC5" customClass="NumberTableViewCell" customModule="Go_Study" customModuleProvider="target">
@@ -75,7 +74,6 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="leftLabel" destination="VaP-WX-1ae" id="In1-Uw-KlD"/>
-                                            <segue destination="ehf-te-zly" kind="show" id="pjH-jA-1YV"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="switchCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="switchCell" id="Hji-ha-TL7" customClass="SwitchTableViewCell" customModule="Go_Study" customModuleProvider="target">
@@ -120,7 +118,6 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="leftLabel" destination="6Z3-D7-loc" id="ZjY-X4-eKW"/>
-                                            <segue destination="Jn0-Op-SWK" kind="show" id="ICU-U0-wzP"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -131,20 +128,29 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="hTH-fD-tKP"/>
                     </view>
                     <connections>
+                        <outlet property="Pan" destination="Weg-Ba-JIA" id="Pfq-7a-J7g"/>
+                        <outlet property="PanExit" destination="Weg-Ba-JIA" id="fW7-s4-Yio"/>
                         <outlet property="tabelView" destination="XbT-Cg-Jv6" id="zor-4t-54B"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gOJ-S8-XB2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="Weg-Ba-JIA">
+                    <connections>
+                        <action selector="panExit:" destination="oot-MK-Shn" id="Len-FE-dkp"/>
+                        <outlet property="delegate" destination="oot-MK-Shn" id="Mrx-kt-v1X"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-803" y="-132"/>
         </scene>
         <!--Default Cell View Controller-->
         <scene sceneID="Ojk-vD-doq">
             <objects>
-                <viewController id="DBW-7W-b4p" customClass="DefaultCellViewController" customModule="Go_Study" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="defaultCellController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="DBW-7W-b4p" customClass="DefaultCellViewController" customModule="Go_Study" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iBp-US-LhU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -178,6 +184,10 @@
                         <viewLayoutGuide key="safeArea" id="pYT-NI-F86"/>
                     </view>
                     <navigationItem key="navigationItem" id="Y80-pq-dpd"/>
+                    <connections>
+                        <outlet property="aboutLabel" destination="bnM-Ja-veQ" id="ESo-L2-hZN"/>
+                        <outlet property="navItem" destination="bwm-Qr-ipT" id="4PX-ep-KXH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oij-PL-UPI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -186,7 +196,7 @@
         <!--Text Cell View Controller-->
         <scene sceneID="emf-Gg-She">
             <objects>
-                <viewController id="Jn0-Op-SWK" customClass="TextCellViewController" customModule="Go_Study" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="textCellController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Jn0-Op-SWK" customClass="TextCellViewController" customModule="Go_Study" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ACZ-gt-qRb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -242,7 +252,7 @@
         <!--Number Cell View Controller-->
         <scene sceneID="7io-3n-n6h">
             <objects>
-                <viewController id="ehf-te-zly" customClass="NumberCellViewController" customModule="Go_Study" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="numberCellController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ehf-te-zly" customClass="NumberCellViewController" customModule="Go_Study" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OtP-1U-OZa">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

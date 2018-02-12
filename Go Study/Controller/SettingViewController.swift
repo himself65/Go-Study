@@ -12,36 +12,21 @@ import CoreData
 class SettingViewController: UIViewController {
     @IBOutlet weak var tabelView: UITableView!
     
+    @IBOutlet var Pan: UIPanGestureRecognizer!
+    @IBAction func panExit(_ sender: Any) {
+        print(Pan.numberOfTouches)
+    }
     var data = getSettingData()
-    
+    var groupsName = getGroupData()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        registerSettingsBundle()
-        NotificationCenter.default.addObserver(self, selector: #selector(SettingViewController.defaultsChanged), name: UserDefaults.didChangeNotification, object: nil)
-        defaultsChanged()
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-    }
-    
-    func registerSettingsBundle(){
-        let appDefaults = [String:AnyObject]()
-        UserDefaults.standard.register(defaults: appDefaults)
-    }
-    
-    @objc func defaultsChanged(){
-        if UserDefaults.standard.bool(forKey: "dark_app") {
-            self.view.backgroundColor = UIColor.black
-        }
-        else {
-            self.view.backgroundColor = UIColor.white
-        }
-    }
-    
-    deinit {
-        NotificationCenter.default.removeObserver(self)
     }
     
     @IBAction func cancel() {
@@ -60,7 +45,7 @@ extension SettingViewController: UITableViewDataSource {
         let item = data[indexPath.section][indexPath.row]
         let cellStyle = item.style
         let cellIdent = converToIdentifier(cellStyle!)
-
+        
         switch cellStyle
         {
         case .defaultStyle?:
@@ -93,13 +78,14 @@ extension SettingViewController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return data.count
     }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return groupsName[section]
+    }
 }
 
 extension SettingViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         noticeTop("你选择了\(indexPath.section)|\(indexPath.row)")
     }
-//    func tableView(_ tableView: UITableView, didHighlightRowAt indexPath: IndexPath) {
-//        noticeTop("你选择了#\(indexPath.row)")
-//    }
 }

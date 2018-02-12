@@ -10,6 +10,7 @@ import UIKit
 
 class DefaultCellViewController: MainSettingViewController {
 
+    @IBOutlet weak var navItem: UINavigationItem!
     @IBOutlet weak var aboutLabel: UILabel!
     
     override func viewDidLoad() {
@@ -23,4 +24,11 @@ class DefaultCellViewController: MainSettingViewController {
     
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        guard let data = sender as? DefaultCell else {
+            fatalError("error segue")
+        }
+        aboutLabel.text = data.moreInfo
+    }
 }
