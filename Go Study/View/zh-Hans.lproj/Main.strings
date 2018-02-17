@@ -1,0 +1,27 @@
+
+/* Class = "UIBarButtonItem"; title = "取消"; ObjectID = "7Mk-IA-dwe"; */
+"7Mk-IA-dwe.title" = "取消";
+
+/* Class = "UIBarButtonItem"; title = "确定"; ObjectID = "ExX-VF-2CA"; */
+"ExX-VF-2CA.title" = "确定";
+
+/* Class = "UINavigationItem"; title = "Title"; ObjectID = "JAj-Na-Dal"; */
+"JAj-Na-Dal.title" = "Title";
+
+/* Class = "UIButton"; normalTitle = "点击打开进度条"; ObjectID = "MYz-xi-oWB"; */
+"MYz-xi-oWB.normalTitle" = "点击打开进度条";
+
+/* Class = "UITabBarItem"; title = "主页"; ObjectID = "RkF-QN-H4B"; */
+"RkF-QN-H4B.title" = "主页";
+
+/* Class = "UIButton"; normalTitle = "OK"; ObjectID = "Uf1-hR-Gut"; */
+"Uf1-hR-Gut.normalTitle" = "OK";
+
+/* Class = "UITabBarItem"; title = "设置"; ObjectID = "cPa-gy-q4n"; */
+"cPa-gy-q4n.title" = "设置";
+
+/* Class = "UINavigationItem"; title = "新建事项"; ObjectID = "nqO-bD-PWb"; */
+"nqO-bD-PWb.title" = "新建事项";
+
+/* Class = "UIButton"; normalTitle = "恢复设置"; ObjectID = "xja-c1-Jil"; */
+"xja-c1-Jil.normalTitle" = "恢复设置";

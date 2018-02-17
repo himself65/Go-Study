@@ -7,7 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA03E21F2031FCEA00D5D9D9 /* Ions in Resources */ = {isa = PBXBuildFile; fileRef = EA03E21E2031FCE900D5D9D9 /* Ions */; };
+		EA051A682031555F00439238 /* ProcessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA051A672031555F00439238 /* ProcessViewController.swift */; };
+		EA051A6B2031564100439238 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA051A6A2031564100439238 /* ProgressView.swift */; };
+		EA051A6D2031578000439238 /* ProcessScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA051A6C2031578000439238 /* ProcessScreen.storyboard */; };
+		EA051A75203179D100439238 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA051A74203179D100439238 /* IntentHandler.swift */; };
+		EA051A7D203179D100439238 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA051A7C203179D100439238 /* IntentsUI.framework */; };
+		EA051A80203179D100439238 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA051A7F203179D100439238 /* IntentViewController.swift */; };
+		EA051A83203179D100439238 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA051A81203179D100439238 /* MainInterface.storyboard */; };
+		EA051A87203179D100439238 /* I Wanna StudyUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EA051A7B203179D100439238 /* I Wanna StudyUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EA051A8A203179D100439238 /* I Wanna Study.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EA051A72203179D100439238 /* I Wanna Study.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EA0BAA032031D2900026293D /* DataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0BAA022031D2900026293D /* DataTableViewCell.swift */; };
 		EA11652C202B0323007240B1 /* SettingScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA11652B202B0323007240B1 /* SettingScreen.storyboard */; };
+		EA2C92DB2033356F00E528D8 /* FindIdentitierKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2C92DA2033356F00E528D8 /* FindIdentitierKey.swift */; };
+		EA2C92DD2033397700E528D8 /* StaticContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2C92DC2033397700E528D8 /* StaticContent.swift */; };
 		EA6F1D342028A6810038E829 /* CountDownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6F1D332028A6810038E829 /* CountDownViewController.swift */; };
 		EA6F1D3F202979F30038E829 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6F1D3E202979F30038E829 /* SettingViewController.swift */; };
 		EA7EFAC020221A50003ADDA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7EFABF20221A50003ADDA5 /* AppDelegate.swift */; };
@@ -15,33 +28,89 @@
 		EA7EFAC420221A50003ADDA5 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7EFAC320221A50003ADDA5 /* SecondViewController.swift */; };
 		EA7EFAC720221A50003ADDA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA7EFAC520221A50003ADDA5 /* Main.storyboard */; };
 		EA7EFACC20221A50003ADDA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA7EFACA20221A50003ADDA5 /* LaunchScreen.storyboard */; };
+		EA95CA1820318988001BAE6A /* AppIntentVocabulary.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA95CA1A20318988001BAE6A /* AppIntentVocabulary.plist */; };
+		EA95CA262031AC36001BAE6A /* CoreDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA95CA252031AC36001BAE6A /* CoreDataHandler.swift */; };
 		EAA6797E202F66490002F2F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAA6797D202F66490002F2F5 /* Assets.xcassets */; };
-		EAA67980202F672E0002F2F5 /* Icons in Resources */ = {isa = PBXBuildFile; fileRef = EAA6797F202F672D0002F2F5 /* Icons */; };
 		EAA67982202F6F1C0002F2F5 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA67981202F6F1C0002F2F5 /* Cell.swift */; };
 		EAAE715220304B0F000B1FFD /* DefaultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAE715020304B0F000B1FFD /* DefaultTableViewCell.swift */; };
 		EAC5A5FB202C99660062AB29 /* FirstLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAC5A5FA202C99660062AB29 /* FirstLaunchScreen.storyboard */; };
-		EAC5A5FD202C9CFD0062AB29 /* StaticContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC5A5FC202C9CFD0062AB29 /* StaticContent.swift */; };
-		EACDB5F02024760E00A2C6A8 /* Notice.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACDB5EF2024760E00A2C6A8 /* Notice.swift */; };
-		EACDB5F220249CBB00A2C6A8 /* AlertActionSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACDB5F120249CBB00A2C6A8 /* AlertActionSwift.swift */; };
+		EACDB5F02024760E00A2C6A8 /* UIResponder-Notice.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACDB5EF2024760E00A2C6A8 /* UIResponder-Notice.swift */; };
+		EACDB5F220249CBB00A2C6A8 /* UIResponder-AlertActionSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACDB5F120249CBB00A2C6A8 /* UIResponder-AlertActionSwift.swift */; };
 		EACDB5F42025E67400A2C6A8 /* KeyBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACDB5F32025E67400A2C6A8 /* KeyBoard.swift */; };
-		EACE7671202228900009154C /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACE7670202228900009154C /* SearchBar.swift */; };
-		EACE767520222B5C0009154C /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EACE767420222B5C0009154C /* HealthKit.framework */; };
 		EACE767B20233B610009154C /* NewPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACE767A20233B610009154C /* NewPageViewController.swift */; };
+		EADF569A20327DA4001E2226 /* UINavigationBar-HideLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADF569920327DA3001E2226 /* UINavigationBar-HideLine.swift */; };
 		EADF8BB520306FC100BFCDF0 /* SwitchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADF8BB420306FC100BFCDF0 /* SwitchTableViewCell.swift */; };
 		EADF8BB720306FCE00BFCDF0 /* TextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADF8BB620306FCE00BFCDF0 /* TextTableViewCell.swift */; };
 		EADF8BB920306FDE00BFCDF0 /* NumberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADF8BB820306FDE00BFCDF0 /* NumberTableViewCell.swift */; };
 		EADF8BBC2030733F00BFCDF0 /* DefaultCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADF8BBB2030733F00BFCDF0 /* DefaultCellViewController.swift */; };
 		EADF8BC02030735E00BFCDF0 /* TextCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADF8BBF2030735E00BFCDF0 /* TextCellViewController.swift */; };
 		EADF8BC22030736900BFCDF0 /* NumberCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADF8BC12030736900BFCDF0 /* NumberCellViewController.swift */; };
-		EADF8BC4203073D500BFCDF0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADF8BC3203073D500BFCDF0 /* MainViewController.swift */; };
+		EADF8BC4203073D500BFCDF0 /* UIViewController-MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADF8BC3203073D500BFCDF0 /* UIViewController-MainViewController.swift */; };
 		EADF8BC720309E1C00BFCDF0 /* MainSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADF8BC620309E1C00BFCDF0 /* MainSettingViewController.swift */; };
-		EAEEB051202C595100F28C99 /* StydyData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EAEEB04F202C595100F28C99 /* StydyData.xcdatamodeld */; };
+		EAEEB051202C595100F28C99 /* Go_Study.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EAEEB04F202C595100F28C99 /* Go_Study.xcdatamodeld */; };
 		EAEEB056202C6D5900F28C99 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EAEEB055202C6D5900F28C99 /* Settings.bundle */; };
 		EAEEB079202C8AAB00F28C99 /* SettingBundleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEEB078202C8AAB00F28C99 /* SettingBundleHelper.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		EA051A85203179D100439238 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA7EFAB420221A50003ADDA5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA051A7A203179D100439238;
+			remoteInfo = "I Wanna StudyUI";
+		};
+		EA051A88203179D100439238 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA7EFAB420221A50003ADDA5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA051A71203179D100439238;
+			remoteInfo = "I Wanna Study";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EA051A63203143AD00439238 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA051A91203179D100439238 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EA051A8A203179D100439238 /* I Wanna Study.appex in Embed App Extensions */,
+				EA051A87203179D100439238 /* I Wanna StudyUI.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		EA03E21E2031FCE900D5D9D9 /* Ions */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Ions; sourceTree = "<group>"; };
+		EA051A672031555F00439238 /* ProcessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessViewController.swift; sourceTree = "<group>"; };
+		EA051A6A2031564100439238 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		EA051A6C2031578000439238 /* ProcessScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProcessScreen.storyboard; sourceTree = "<group>"; };
+		EA051A72203179D100439238 /* I Wanna Study.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "I Wanna Study.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA051A74203179D100439238 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		EA051A76203179D100439238 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA051A7B203179D100439238 /* I Wanna StudyUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "I Wanna StudyUI.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA051A7C203179D100439238 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		EA051A7F203179D100439238 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		EA051A82203179D100439238 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		EA051A84203179D100439238 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA0BAA022031D2900026293D /* DataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTableViewCell.swift; sourceTree = "<group>"; };
 		EA11652B202B0323007240B1 /* SettingScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingScreen.storyboard; sourceTree = "<group>"; };
+		EA2C92DA2033356F00E528D8 /* FindIdentitierKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindIdentitierKey.swift; sourceTree = "<group>"; };
+		EA2C92DC2033397700E528D8 /* StaticContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticContent.swift; sourceTree = "<group>"; };
 		EA6F1D332028A6810038E829 /* CountDownViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownViewController.swift; sourceTree = "<group>"; };
 		EA6F1D3E202979F30038E829 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		EA7EFABC20221A50003ADDA5 /* Go Study.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Go Study.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,26 +120,30 @@
 		EA7EFAC620221A50003ADDA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA7EFACB20221A50003ADDA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA7EFACD20221A50003ADDA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA95CA102031879D001BAE6A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		EA95CA112031879D001BAE6A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		EA95CA122031879D001BAE6A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/MainInterface.strings"; sourceTree = "<group>"; };
+		EA95CA1920318988001BAE6A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/AppIntentVocabulary.plist; sourceTree = "<group>"; };
+		EA95CA1C203189A9001BAE6A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "zh-Hans"; path = "zh-Hans.lproj/AppIntentVocabulary.plist"; sourceTree = "<group>"; };
+		EA95CA2020318FFE001BAE6A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		EA95CA252031AC36001BAE6A /* CoreDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHandler.swift; sourceTree = "<group>"; };
 		EAA6797D202F66490002F2F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		EAA6797F202F672D0002F2F5 /* Icons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Icons; sourceTree = "<group>"; };
 		EAA67981202F6F1C0002F2F5 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		EAAE715020304B0F000B1FFD /* DefaultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTableViewCell.swift; sourceTree = "<group>"; };
 		EAC5A5FA202C99660062AB29 /* FirstLaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FirstLaunchScreen.storyboard; sourceTree = "<group>"; };
-		EAC5A5FC202C9CFD0062AB29 /* StaticContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticContent.swift; sourceTree = "<group>"; };
-		EACDB5EF2024760E00A2C6A8 /* Notice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notice.swift; sourceTree = "<group>"; };
-		EACDB5F120249CBB00A2C6A8 /* AlertActionSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertActionSwift.swift; sourceTree = "<group>"; };
+		EACDB5EF2024760E00A2C6A8 /* UIResponder-Notice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIResponder-Notice.swift"; sourceTree = "<group>"; };
+		EACDB5F120249CBB00A2C6A8 /* UIResponder-AlertActionSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIResponder-AlertActionSwift.swift"; sourceTree = "<group>"; };
 		EACDB5F32025E67400A2C6A8 /* KeyBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyBoard.swift; sourceTree = "<group>"; };
-		EACE7670202228900009154C /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		EACE767220222B5C0009154C /* Go Study.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Go Study.entitlements"; sourceTree = "<group>"; };
-		EACE767420222B5C0009154C /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		EACE767A20233B610009154C /* NewPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPageViewController.swift; sourceTree = "<group>"; };
+		EADF569920327DA3001E2226 /* UINavigationBar-HideLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationBar-HideLine.swift"; sourceTree = "<group>"; };
 		EADF8BB420306FC100BFCDF0 /* SwitchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchTableViewCell.swift; sourceTree = "<group>"; };
 		EADF8BB620306FCE00BFCDF0 /* TextTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextTableViewCell.swift; sourceTree = "<group>"; };
 		EADF8BB820306FDE00BFCDF0 /* NumberTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberTableViewCell.swift; sourceTree = "<group>"; };
 		EADF8BBB2030733F00BFCDF0 /* DefaultCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCellViewController.swift; sourceTree = "<group>"; };
 		EADF8BBF2030735E00BFCDF0 /* TextCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCellViewController.swift; sourceTree = "<group>"; };
 		EADF8BC12030736900BFCDF0 /* NumberCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberCellViewController.swift; sourceTree = "<group>"; };
-		EADF8BC3203073D500BFCDF0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		EADF8BC3203073D500BFCDF0 /* UIViewController-MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController-MainViewController.swift"; sourceTree = "<group>"; };
 		EADF8BC620309E1C00BFCDF0 /* MainSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSettingViewController.swift; sourceTree = "<group>"; };
 		EAEEB050202C595100F28C99 /* StydyData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StydyData.xcdatamodel; sourceTree = "<group>"; };
 		EAEEB055202C6D5900F28C99 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
@@ -78,26 +151,72 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		EA051A6F203179D100439238 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA051A78203179D100439238 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA051A7D203179D100439238 /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EA7EFAB920221A50003ADDA5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EACE767520222B5C0009154C /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EA051A662031543100439238 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EADF8BC3203073D500BFCDF0 /* UIViewController-MainViewController.swift */,
+				EACDB5F120249CBB00A2C6A8 /* UIResponder-AlertActionSwift.swift */,
+				EACDB5EF2024760E00A2C6A8 /* UIResponder-Notice.swift */,
+				EADF569920327DA3001E2226 /* UINavigationBar-HideLine.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		EA051A73203179D100439238 /* I Wanna Study */ = {
+			isa = PBXGroup;
+			children = (
+				EA051A74203179D100439238 /* IntentHandler.swift */,
+				EA051A76203179D100439238 /* Info.plist */,
+				EA95CA1A20318988001BAE6A /* AppIntentVocabulary.plist */,
+			);
+			path = "I Wanna Study";
+			sourceTree = "<group>";
+		};
+		EA051A7E203179D100439238 /* I Wanna StudyUI */ = {
+			isa = PBXGroup;
+			children = (
+				EA051A7F203179D100439238 /* IntentViewController.swift */,
+				EA051A81203179D100439238 /* MainInterface.storyboard */,
+				EA051A84203179D100439238 /* Info.plist */,
+			);
+			path = "I Wanna StudyUI";
+			sourceTree = "<group>";
+		};
 		EA6F1D352028A68A0038E829 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				EA6F1D3E202979F30038E829 /* SettingViewController.swift */,
 				EADF8BBA2030730B00BFCDF0 /* SettingViewController */,
 				EA7EFAC120221A50003ADDA5 /* FirstViewController.swift */,
 				EA7EFAC320221A50003ADDA5 /* SecondViewController.swift */,
 				EACE767A20233B610009154C /* NewPageViewController.swift */,
 				EA6F1D332028A6810038E829 /* CountDownViewController.swift */,
-				EA6F1D3E202979F30038E829 /* SettingViewController.swift */,
+				EA051A672031555F00439238 /* ProcessViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -105,13 +224,11 @@
 		EA6F1D372028A6B80038E829 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				EACE7670202228900009154C /* SearchBar.swift */,
 				EACDB5F32025E67400A2C6A8 /* KeyBoard.swift */,
-				EACDB5EF2024760E00A2C6A8 /* Notice.swift */,
-				EACDB5F120249CBB00A2C6A8 /* AlertActionSwift.swift */,
 				EAEEB078202C8AAB00F28C99 /* SettingBundleHelper.swift */,
-				EAC5A5FC202C9CFD0062AB29 /* StaticContent.swift */,
-				EADF8BC3203073D500BFCDF0 /* MainViewController.swift */,
+				EA051A6A2031564100439238 /* ProgressView.swift */,
+				EA2C92DA2033356F00E528D8 /* FindIdentitierKey.swift */,
+				EA2C92DC2033397700E528D8 /* StaticContent.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -119,9 +236,11 @@
 		EA6F1D39202964BC0038E829 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EAB9CFDA20300DE8007F5BE6 /* CellData */,
 				EA7EFAC520221A50003ADDA5 /* Main.storyboard */,
 				EA11652B202B0323007240B1 /* SettingScreen.storyboard */,
 				EAC5A5FA202C99660062AB29 /* FirstLaunchScreen.storyboard */,
+				EA051A6C2031578000439238 /* ProcessScreen.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -129,8 +248,8 @@
 		EA6F1D3A202971070038E829 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				EAB9CFDA20300DE8007F5BE6 /* CellData */,
-				EAEEB04F202C595100F28C99 /* StydyData.xcdatamodeld */,
+				EAEEB04F202C595100F28C99 /* Go_Study.xcdatamodeld */,
+				EA95CA252031AC36001BAE6A /* CoreDataHandler.swift */,
 			);
 			name = Model;
 			path = Models;
@@ -140,6 +259,8 @@
 			isa = PBXGroup;
 			children = (
 				EA7EFABE20221A50003ADDA5 /* Go Study */,
+				EA051A73203179D100439238 /* I Wanna Study */,
+				EA051A7E203179D100439238 /* I Wanna StudyUI */,
 				EA7EFABD20221A50003ADDA5 /* Products */,
 				EACE767320222B5C0009154C /* Frameworks */,
 			);
@@ -149,6 +270,8 @@
 			isa = PBXGroup;
 			children = (
 				EA7EFABC20221A50003ADDA5 /* Go Study.app */,
+				EA051A72203179D100439238 /* I Wanna Study.appex */,
+				EA051A7B203179D100439238 /* I Wanna StudyUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -156,27 +279,20 @@
 		EA7EFABE20221A50003ADDA5 /* Go Study */ = {
 			isa = PBXGroup;
 			children = (
-				EAAE714B203030BE000B1FFD /* watchOS */,
-				EAA6797F202F672D0002F2F5 /* Icons */,
-				EAA6797D202F66490002F2F5 /* Assets.xcassets */,
+				EA03E21E2031FCE900D5D9D9 /* Ions */,
 				EAEEB055202C6D5900F28C99 /* Settings.bundle */,
 				EACE767220222B5C0009154C /* Go Study.entitlements */,
 				EA7EFACD20221A50003ADDA5 /* Info.plist */,
 				EA7EFABF20221A50003ADDA5 /* AppDelegate.swift */,
-				EA7EFACA20221A50003ADDA5 /* LaunchScreen.storyboard */,
+				EAA6797D202F66490002F2F5 /* Assets.xcassets */,
 				EA6F1D372028A6B80038E829 /* Common */,
 				EA6F1D352028A68A0038E829 /* Controller */,
+				EA051A662031543100439238 /* Extension */,
+				EA7EFACA20221A50003ADDA5 /* LaunchScreen.storyboard */,
 				EA6F1D3A202971070038E829 /* Model */,
 				EA6F1D39202964BC0038E829 /* View */,
 			);
 			path = "Go Study";
-			sourceTree = "<group>";
-		};
-		EAAE714B203030BE000B1FFD /* watchOS */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = watchOS;
 			sourceTree = "<group>";
 		};
 		EAB9CFDA20300DE8007F5BE6 /* CellData */ = {
@@ -187,6 +303,7 @@
 				EADF8BB420306FC100BFCDF0 /* SwitchTableViewCell.swift */,
 				EADF8BB620306FCE00BFCDF0 /* TextTableViewCell.swift */,
 				EADF8BB820306FDE00BFCDF0 /* NumberTableViewCell.swift */,
+				EA0BAA022031D2900026293D /* DataTableViewCell.swift */,
 			);
 			path = CellData;
 			sourceTree = "<group>";
@@ -194,7 +311,7 @@
 		EACE767320222B5C0009154C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				EACE767420222B5C0009154C /* HealthKit.framework */,
+				EA051A7C203179D100439238 /* IntentsUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -213,6 +330,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		EA051A71203179D100439238 /* I Wanna Study */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA051A8E203179D100439238 /* Build configuration list for PBXNativeTarget "I Wanna Study" */;
+			buildPhases = (
+				EA051A6E203179D100439238 /* Sources */,
+				EA051A6F203179D100439238 /* Frameworks */,
+				EA051A70203179D100439238 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "I Wanna Study";
+			productName = "I Wanna Study";
+			productReference = EA051A72203179D100439238 /* I Wanna Study.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		EA051A7A203179D100439238 /* I Wanna StudyUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA051A8B203179D100439238 /* Build configuration list for PBXNativeTarget "I Wanna StudyUI" */;
+			buildPhases = (
+				EA051A77203179D100439238 /* Sources */,
+				EA051A78203179D100439238 /* Frameworks */,
+				EA051A79203179D100439238 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "I Wanna StudyUI";
+			productName = "I Wanna StudyUI";
+			productReference = EA051A7B203179D100439238 /* I Wanna StudyUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		EA7EFABB20221A50003ADDA5 /* Go Study */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EA7EFAD020221A50003ADDA5 /* Build configuration list for PBXNativeTarget "Go Study" */;
@@ -220,10 +371,14 @@
 				EA7EFAB820221A50003ADDA5 /* Sources */,
 				EA7EFAB920221A50003ADDA5 /* Frameworks */,
 				EA7EFABA20221A50003ADDA5 /* Resources */,
+				EA051A63203143AD00439238 /* Embed Watch Content */,
+				EA051A91203179D100439238 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				EA051A86203179D100439238 /* PBXTargetDependency */,
+				EA051A89203179D100439238 /* PBXTargetDependency */,
 			);
 			name = "Go Study";
 			productName = "Go Study";
@@ -237,15 +392,26 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = Himself65;
 				TargetAttributes = {
+					EA051A71203179D100439238 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					EA051A7A203179D100439238 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 					EA7EFABB20221A50003ADDA5 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
-							com.apple.HealthKit = {
+							com.apple.DataProtection = {
 								enabled = 1;
+							};
+							com.apple.HealthKit = {
+								enabled = 0;
 							};
 						};
 					};
@@ -258,6 +424,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = EA7EFAB320221A50003ADDA5;
 			productRefGroup = EA7EFABD20221A50003ADDA5 /* Products */;
@@ -265,21 +432,40 @@
 			projectRoot = "";
 			targets = (
 				EA7EFABB20221A50003ADDA5 /* Go Study */,
+				EA051A71203179D100439238 /* I Wanna Study */,
+				EA051A7A203179D100439238 /* I Wanna StudyUI */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		EA051A70203179D100439238 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA95CA1820318988001BAE6A /* AppIntentVocabulary.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA051A79203179D100439238 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA051A83203179D100439238 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EA7EFABA20221A50003ADDA5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAA67980202F672E0002F2F5 /* Icons in Resources */,
 				EAC5A5FB202C99660062AB29 /* FirstLaunchScreen.storyboard in Resources */,
 				EA7EFACC20221A50003ADDA5 /* LaunchScreen.storyboard in Resources */,
 				EA11652C202B0323007240B1 /* SettingScreen.storyboard in Resources */,
 				EAEEB056202C6D5900F28C99 /* Settings.bundle in Resources */,
 				EAA6797E202F66490002F2F5 /* Assets.xcassets in Resources */,
+				EA03E21F2031FCEA00D5D9D9 /* Ions in Resources */,
+				EA051A6D2031578000439238 /* ProcessScreen.storyboard in Resources */,
 				EA7EFAC720221A50003ADDA5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,43 +473,88 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		EA051A6E203179D100439238 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA051A75203179D100439238 /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA051A77203179D100439238 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA051A80203179D100439238 /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EA7EFAB820221A50003ADDA5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EACDB5F220249CBB00A2C6A8 /* AlertActionSwift.swift in Sources */,
-				EADF8BC4203073D500BFCDF0 /* MainViewController.swift in Sources */,
+				EADF569A20327DA4001E2226 /* UINavigationBar-HideLine.swift in Sources */,
+				EACDB5F220249CBB00A2C6A8 /* UIResponder-AlertActionSwift.swift in Sources */,
+				EADF8BC4203073D500BFCDF0 /* UIViewController-MainViewController.swift in Sources */,
 				EA6F1D3F202979F30038E829 /* SettingViewController.swift in Sources */,
 				EAA67982202F6F1C0002F2F5 /* Cell.swift in Sources */,
 				EACE767B20233B610009154C /* NewPageViewController.swift in Sources */,
 				EADF8BC720309E1C00BFCDF0 /* MainSettingViewController.swift in Sources */,
+				EA95CA262031AC36001BAE6A /* CoreDataHandler.swift in Sources */,
+				EA051A6B2031564100439238 /* ProgressView.swift in Sources */,
 				EAAE715220304B0F000B1FFD /* DefaultTableViewCell.swift in Sources */,
 				EADF8BBC2030733F00BFCDF0 /* DefaultCellViewController.swift in Sources */,
-				EAC5A5FD202C9CFD0062AB29 /* StaticContent.swift in Sources */,
 				EADF8BC22030736900BFCDF0 /* NumberCellViewController.swift in Sources */,
 				EADF8BB920306FDE00BFCDF0 /* NumberTableViewCell.swift in Sources */,
 				EACDB5F42025E67400A2C6A8 /* KeyBoard.swift in Sources */,
 				EA7EFAC420221A50003ADDA5 /* SecondViewController.swift in Sources */,
-				EACE7671202228900009154C /* SearchBar.swift in Sources */,
 				EADF8BB520306FC100BFCDF0 /* SwitchTableViewCell.swift in Sources */,
-				EAEEB051202C595100F28C99 /* StydyData.xcdatamodeld in Sources */,
-				EACDB5F02024760E00A2C6A8 /* Notice.swift in Sources */,
+				EAEEB051202C595100F28C99 /* Go_Study.xcdatamodeld in Sources */,
+				EA2C92DD2033397700E528D8 /* StaticContent.swift in Sources */,
+				EACDB5F02024760E00A2C6A8 /* UIResponder-Notice.swift in Sources */,
 				EAEEB079202C8AAB00F28C99 /* SettingBundleHelper.swift in Sources */,
 				EADF8BB720306FCE00BFCDF0 /* TextTableViewCell.swift in Sources */,
 				EA6F1D342028A6810038E829 /* CountDownViewController.swift in Sources */,
 				EA7EFAC020221A50003ADDA5 /* AppDelegate.swift in Sources */,
 				EA7EFAC220221A50003ADDA5 /* FirstViewController.swift in Sources */,
+				EA051A682031555F00439238 /* ProcessViewController.swift in Sources */,
+				EA2C92DB2033356F00E528D8 /* FindIdentitierKey.swift in Sources */,
 				EADF8BC02030735E00BFCDF0 /* TextCellViewController.swift in Sources */,
+				EA0BAA032031D2900026293D /* DataTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		EA051A86203179D100439238 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA051A7A203179D100439238 /* I Wanna StudyUI */;
+			targetProxy = EA051A85203179D100439238 /* PBXContainerItemProxy */;
+		};
+		EA051A89203179D100439238 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA051A71203179D100439238 /* I Wanna Study */;
+			targetProxy = EA051A88203179D100439238 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		EA051A81203179D100439238 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA051A82203179D100439238 /* Base */,
+				EA95CA122031879D001BAE6A /* zh-Hans */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		EA7EFAC520221A50003ADDA5 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				EA7EFAC620221A50003ADDA5 /* Base */,
+				EA95CA112031879D001BAE6A /* zh-Hans */,
+				EA95CA2020318FFE001BAE6A /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -332,17 +563,88 @@
 			isa = PBXVariantGroup;
 			children = (
 				EA7EFACB20221A50003ADDA5 /* Base */,
+				EA95CA102031879D001BAE6A /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EA95CA1A20318988001BAE6A /* AppIntentVocabulary.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA95CA1920318988001BAE6A /* en */,
+				EA95CA1C203189A9001BAE6A /* zh-Hans */,
+			);
+			name = AppIntentVocabulary.plist;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		EA051A8C203179D100439238 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N9CDJBSN2N;
+				INFOPLIST_FILE = "I Wanna StudyUI/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Aimona.Go-Study.I-Wanna-StudyUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EA051A8D203179D100439238 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N9CDJBSN2N;
+				INFOPLIST_FILE = "I Wanna StudyUI/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Aimona.Go-Study.I-Wanna-StudyUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EA051A8F203179D100439238 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N9CDJBSN2N;
+				INFOPLIST_FILE = "I Wanna Study/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Aimona.Go-Study.I-Wanna-Study";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EA051A90203179D100439238 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N9CDJBSN2N;
+				INFOPLIST_FILE = "I Wanna Study/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Aimona.Go-Study.I-Wanna-Study";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		EA7EFACE20221A50003ADDA5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -353,6 +655,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -360,6 +663,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -400,6 +704,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -410,6 +715,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -417,6 +723,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -449,6 +756,7 @@
 		EA7EFAD120221A50003ADDA5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Go Study/Go Study.entitlements";
 				CODE_SIGN_STYLE = Automatic;
@@ -465,6 +773,7 @@
 		EA7EFAD220221A50003ADDA5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Go Study/Go Study.entitlements";
 				CODE_SIGN_STYLE = Automatic;
@@ -481,6 +790,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		EA051A8B203179D100439238 /* Build configuration list for PBXNativeTarget "I Wanna StudyUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA051A8C203179D100439238 /* Debug */,
+				EA051A8D203179D100439238 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA051A8E203179D100439238 /* Build configuration list for PBXNativeTarget "I Wanna Study" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA051A8F203179D100439238 /* Debug */,
+				EA051A90203179D100439238 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		EA7EFAB720221A50003ADDA5 /* Build configuration list for PBXProject "Go Study" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -502,13 +829,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		EAEEB04F202C595100F28C99 /* StydyData.xcdatamodeld */ = {
+		EAEEB04F202C595100F28C99 /* Go_Study.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				EAEEB050202C595100F28C99 /* StydyData.xcdatamodel */,
 			);
 			currentVersion = EAEEB050202C595100F28C99 /* StydyData.xcdatamodel */;
-			path = StydyData.xcdatamodeld;
+			path = Go_Study.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

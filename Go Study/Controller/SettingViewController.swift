@@ -8,24 +8,16 @@
 
 import UIKit
 import CoreData
+import os.log
 
 class SettingViewController: UIViewController {
     @IBOutlet weak var tabelView: UITableView!
     
-    @IBOutlet var Pan: UIPanGestureRecognizer!
-    @IBAction func panExit(_ sender: Any) {
-        print(Pan.numberOfTouches)
-    }
     var data = getSettingData()
     var groupsName = getGroupData()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
         
     }
     
@@ -63,7 +55,7 @@ extension SettingViewController: UITableViewDataSource {
             cell?.leftLabel.text = item.leftLabel
             cell?.accessoryType = .disclosureIndicator
             return cell!
-        case .numberCell?:
+        case .numberStyle?:
             let cell = tableView.dequeueReusableCell(withIdentifier: cellIdent) as? NumberTableViewCell
             cell?.leftLabel.text = item.leftLabel
             cell?.accessoryType = .disclosureIndicator
@@ -85,7 +77,19 @@ extension SettingViewController: UITableViewDataSource {
 }
 
 extension SettingViewController: UITableViewDelegate {
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        noticeTop("你选择了\(indexPath.section)|\(indexPath.row)")
+        let selectedData = data[indexPath.section][indexPath.row]
+        switch selectedData.style! {
+        case .defaultStyle:
+            break
+        case .numberStyle:
+            break
+        case .switchStyle:
+            break
+        case .textStyle:
+            break
+        }
+        
     }
 }

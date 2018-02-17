@@ -40,7 +40,7 @@ class FirstViewController: UIViewController {
     }
     
     @IBAction func resetAll(_ sender: Any) {
-        let alert = alertShow("你确定要删除所有设置吗？", message: "真的吗？", style: .alert, leftContent: ActionContent(title: "取消", style: .cancel, handler: nil), rightContent: ActionContent(title: "确定", style: .destructive, handler:
+        let alert = alertShow("你确定要删除所有设置吗？", message: "最好别点确定，会BUG", style: .alert, leftContent: ActionContent(title: "取消", style: .cancel, handler: nil), rightContent: ActionContent(title: "确定", style: .destructive, handler:
         {
             clickHandler in
             let dic = self.userStandard.dictionaryRepresentation()

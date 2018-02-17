@@ -10,28 +10,38 @@ import UIKit
 
 class SecondViewController: UIViewController {
     
+    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var navigationBar: UINavigationBar!
     
-    var info = [
-        "杨泽宇","你爹爹",
-        "不知道","轮子哥","不认识"]
-    var ans: [String] = []
+    var refreshControl: UIRefreshControl!
+    var defaultSize: CGRect!
     
+    var ans: [StudyData] = []
+    var data: [StudyData] = []
     override func viewDidLoad() {
         super.viewDidLoad()
-        let button = searchBar.value(forKey: "cancelButton") as! UIButton
-        button.setTitle("取消", for: .normal)
-        ans = info
+        
     }
-
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        // MARK - navigationBar hideBottomLine
+        navigationBar.shadowImage = UIImage()
+        
+        data = CoreDataHandler.fetchObject()!
+        initTableView()
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
     }
     
     func initTableView() {
-        ans = info
+        ans = data
         tableView.reloadData()
     }
 }
@@ -49,11 +59,11 @@ extension SecondViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         print(searchText)
         if searchText == "" {
-            ans = info
+            ans = data
         } else {
             self.ans = []
-            for i in info {
-                if i.lowercased().hasPrefix(searchText.lowercased()) {
+            for i in data {
+                if (i.title?.lowercased().hasPrefix(searchText.lowercased()))! {
                     self.ans.append(i)
                 }
             }
@@ -62,6 +72,7 @@ extension SecondViewController: UISearchBarDelegate {
     }
     
 }
+
 
 extension SecondViewController: UITableViewDataSource, UITableViewDelegate {
     
@@ -74,8 +85,12 @@ extension SecondViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = (tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)) as UITableViewCell
-        cell.textLabel?.text = ans[indexPath.row]
+        let cell = (tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)) as! DataTableViewCell
+        cell.label.text = ans[indexPath.row].title
         return cell
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        // Unfinished
     }
 }

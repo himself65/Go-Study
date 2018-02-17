@@ -7,12 +7,12 @@
 //
 
 import UIKit
+import os.log
 
 class MainSettingViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
     }
 
@@ -21,7 +21,7 @@ class MainSettingViewController: UIViewController {
         
     }
     
-    @IBAction func unwindToMealList(sender: UIStoryboardSegue) {
-        
+    @IBAction func exitAndSave(sender: UIStoryboardSegue) {
+        exitDefault()
     }
 }

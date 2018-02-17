@@ -26,9 +26,21 @@ class DefaultCellViewController: MainSettingViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
-        guard let data = sender as? DefaultCell else {
-            fatalError("error segue")
+        
+        switch segue.identifier {
+        case "DefaultSegue"?:
+            print("DefaultSegue")
+        default:
+            return
         }
-        aboutLabel.text = data.moreInfo
+    }
+    
+    @IBAction func cancel() {
+        exitDefault()
+    }
+    
+    @IBAction override func exitAndSave(sender: UIStoryboardSegue) {
+        
+        super.exitAndSave(sender: sender)
     }
 }

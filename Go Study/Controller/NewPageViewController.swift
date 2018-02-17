@@ -7,10 +7,15 @@
 //
 
 import UIKit
+import CoreData
 
 class NewPageViewController: UIViewController {
 
-    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var titleFiled: UITextField!
+    @IBOutlet weak var contentFiled: UITextField!
+    @IBOutlet weak var datePicker: UIDatePicker!
+    
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,21 +26,26 @@ class NewPageViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-    private func exit() {
-        print("正在退出新建页面")
-        self.dismiss(animated: true, completion: nil)
-    }
-    
     @IBAction func fuck(_ sender: Any) {
-        exit()
+        exitDefault()
     }
     
     @IBAction func finishButton(_ sender: Any) {
+        let context = appDelegate.persistentContainer.viewContext
+        let entity = NSEntityDescription.entity(forEntityName: "StudyData", in: context)
         
-        if nameTextField.text != "" {
-            exit()
-        } else {
-            self.noticeError("请检查输入", autoClear: true, autoClearTime: 1)
+        let studyData = NSManagedObject(entity: entity!, insertInto: context)
+        studyData.setValue(titleFiled.text, forKey: "title")
+        studyData.setValue(contentFiled.text, forKey: "moreInfo")
+        studyData.setValue(datePicker.date, forKey: "endDate")
+        do {
+            try context.save()
+        } catch {
+            print("failed saving")
         }
+        noticeTop("创建完成！")
+        
+        exitDefault()
     }
+    
 }

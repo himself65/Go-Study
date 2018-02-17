@@ -15,9 +15,9 @@ class SettingsBundleHelper {
     }
     
     class func setDefaultSetting() {
-        StaticContent.userDefault.set("Himself65", forKey: "userName")
-        StaticContent.userDefault.set(16, forKey: "userAge")
-        StaticContent.userDefault.set(11, forKey: "userGrade")
+        UserDefaults.standard.set("Himself65", forKey: "userName")
+        UserDefaults.standard.set(16, forKey: "userAge")
+        UserDefaults.standard.set(11, forKey: "userGrade")
     }
     
     class func setVersionAndBuildNumber() {
