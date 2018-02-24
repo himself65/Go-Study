@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14092" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oot-MK-Shn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14092" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Bkp-0H-Z5i">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,10 +10,26 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="13l-yC-VYe">
+            <objects>
+                <navigationController id="Bkp-0H-Z5i" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CVW-pl-nd4">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="oot-MK-Shn" kind="relationship" relationship="rootViewController" id="vwf-aO-6OO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QMr-zt-VuA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1654" y="-143"/>
+        </scene>
         <!--设置-->
         <scene sceneID="fah-1Y-M6I">
             <objects>
-                <viewController id="oot-MK-Shn" userLabel="设置" customClass="SettingViewController" customModule="Go_Study" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="oot-MK-Shn" userLabel="设置" customClass="SettingViewController" customModule="Go_Study" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ded-Ol-nXT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -23,11 +39,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="设置" id="Tqm-rX-WNi">
-                                        <barButtonItem key="leftBarButtonItem" title="返回" id="vDK-1c-JAp">
-                                            <connections>
-                                                <action selector="cancel" destination="oot-MK-Shn" id="t3E-mi-eNh"/>
-                                            </connections>
-                                        </barButtonItem>
+                                        <barButtonItem key="leftBarButtonItem" title="返回" id="vDK-1c-JAp"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -131,33 +143,45 @@
                         <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="hTH-fD-tKP"/>
                     </view>
+                    <navigationItem key="navigationItem" title="设置" largeTitleDisplayMode="always" id="2Hz-tY-lzP">
+                        <barButtonItem key="leftBarButtonItem" title="主页" id="nN0-Vf-Wpp">
+                            <connections>
+                                <segue destination="mUN-Hu-iLG" kind="unwind" unwindAction="exitAndSaveWithSender:" id="Yxm-AO-Bdd"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tabelView" destination="XbT-Cg-Jv6" id="zor-4t-54B"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gOJ-S8-XB2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="mUN-Hu-iLG" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-803" y="-132"/>
         </scene>
         <!--Default Cell View Controller-->
         <scene sceneID="Ojk-vD-doq">
             <objects>
-                <viewController storyboardIdentifier="defaultCellController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="DBW-7W-b4p" customClass="DefaultCellViewController" customModule="Go_Study" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="defaultCellController" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="DBW-7W-b4p" customClass="DefaultCellViewController" customModule="Go_Study" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iBp-US-LhU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4EU-kd-TRA">
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" largeTitles="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4EU-kd-TRA">
                                 <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="设置" id="bwm-Qr-ipT">
                                         <barButtonItem key="leftBarButtonItem" title="返回" id="vhu-C9-QuD">
                                             <connections>
-                                                <action selector="cancel" destination="DBW-7W-b4p" id="NfO-gh-32a"/>
+                                                <action selector="exitButton" destination="DBW-7W-b4p" id="1h1-ZH-n0Y"/>
                                             </connections>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" title="保存" id="V6z-td-8Qp"/>
+                                        <barButtonItem key="rightBarButtonItem" title="保存" id="V6z-td-8Qp">
+                                            <connections>
+                                                <action selector="saveButton" destination="DBW-7W-b4p" id="JBK-G4-c7b"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -179,10 +203,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="pYT-NI-F86"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Y80-pq-dpd"/>
                     <connections>
-                        <outlet property="aboutLabel" destination="bnM-Ja-veQ" id="ESo-L2-hZN"/>
-                        <outlet property="navItem" destination="bwm-Qr-ipT" id="4PX-ep-KXH"/>
+                        <outlet property="aboutLabel" destination="bnM-Ja-veQ" id="a7H-Cg-lK2"/>
+                        <outlet property="mainLabel" destination="yRp-qk-rT1" id="Md6-Aa-x4j"/>
+                        <outlet property="navItem" destination="bwm-Qr-ipT" id="bzN-ZR-BZJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oij-PL-UPI" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -192,7 +216,7 @@
         <!--Text Cell View Controller-->
         <scene sceneID="emf-Gg-She">
             <objects>
-                <viewController storyboardIdentifier="textCellController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Jn0-Op-SWK" customClass="TextCellViewController" customModule="Go_Study" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="textCellController" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Jn0-Op-SWK" customClass="TextCellViewController" customModule="Go_Study" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ACZ-gt-qRb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -234,21 +258,34 @@
                         <viewLayoutGuide key="safeArea" id="Aye-Wp-JgV"/>
                     </view>
                     <connections>
-                        <outlet property="aboutLabel" destination="Pkh-GS-WyD" id="VtB-0q-9PT"/>
-                        <outlet property="bar" destination="aCO-LB-LGe" id="sqd-gG-huk"/>
-                        <outlet property="nameItem" destination="59N-wb-uAR" id="CcW-cN-1YG"/>
-                        <outlet property="saveButton" destination="qO9-RN-FU3" id="rnE-wc-1Bo"/>
-                        <outlet property="textFiled" destination="s8u-Ci-tus" id="yMo-b0-1s5"/>
+                        <outlet property="aboutLabel" destination="Pkh-GS-WyD" id="D0q-Lc-I8V"/>
+                        <outlet property="navItem" destination="59N-wb-uAR" id="hfN-tM-ZyW"/>
+                        <outlet property="textFiled" destination="s8u-Ci-tus" id="9AF-hv-jpN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IsC-KZ-E5J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="53" y="531"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="YMx-vG-smU">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="i1g-nq-s2S" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uKu-Jr-UBh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="HG3-uK-vb9"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IDz-Vf-lln" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="1204"/>
+        </scene>
         <!--Number Cell View Controller-->
         <scene sceneID="7io-3n-n6h">
             <objects>
-                <viewController storyboardIdentifier="numberCellController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ehf-te-zly" customClass="NumberCellViewController" customModule="Go_Study" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="numberCellController" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ehf-te-zly" customClass="NumberCellViewController" customModule="Go_Study" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OtP-1U-OZa">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -258,16 +295,34 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="设置" id="P8D-1J-Ll9">
-                                        <barButtonItem key="leftBarButtonItem" title="返回" id="lcm-ad-cQ9"/>
-                                        <barButtonItem key="rightBarButtonItem" title="保存" id="9LJ-6d-87b"/>
+                                        <barButtonItem key="leftBarButtonItem" title="返回" id="lcm-ad-cQ9">
+                                            <connections>
+                                                <action selector="exitButton:" destination="ehf-te-zly" id="Ltc-oF-uEP"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="保存" id="9LJ-6d-87b">
+                                            <connections>
+                                                <action selector="saveButton:" destination="ehf-te-zly" id="cbT-Gs-f7t"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2zr-BD-DPB">
+                                <rect key="frame" x="16" y="115" width="122" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Wmt-9V-8zd"/>
                     </view>
-                    <navigationItem key="navigationItem" id="ieA-BK-Oa5"/>
+                    <connections>
+                        <outlet property="aboutLabel" destination="2zr-BD-DPB" id="kKK-dB-cv0"/>
+                        <outlet property="navItem" destination="P8D-1J-Ll9" id="syW-W2-8y4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f1b-cd-R96" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
