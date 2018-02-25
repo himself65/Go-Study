@@ -15,9 +15,9 @@ class SettingsBundleHelper {
     }
     
     class func setDefaultSetting() {
-        UserDefaults.standard.set("Himself65", forKey: "userName")
-        UserDefaults.standard.set(16, forKey: "userAge")
-        UserDefaults.standard.set(11, forKey: "userGrade")
+        userDefault.set(25, forKey: "defaultDuration")
+        userDefault.set(false, forKey: Common.alwaysOnScreenKey)
+        userDefault.set(false, forKey: Common.cannotUsePhoneKey)
     }
     
     class func setVersionAndBuildNumber() {

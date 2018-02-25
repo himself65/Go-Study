@@ -14,13 +14,6 @@ class CoreDataHandler: NSObject {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         return appDelegate.persistentContainer.viewContext
     }
-
-//    private class func saveObject(_ title: String) -> Bool {
-//        let context = getContent()
-//        let entity = NSEntityDescription.entity(forEntityName: "StudyData", in: context)
-//        let studyData = NSManagedObject(entity: entity!, insertInto: context)
-//
-//    }
     
     class func fetchObject() -> [StudyData]? {
         let content = getContent()

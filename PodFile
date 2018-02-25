@@ -1,0 +1,7 @@
+platform :ios, '8.0'
+source 'https://git.coding.net/hging/Specs.git'
+
+target 'Go Study' do
+pod 'Charts'
+pod 'Charts/Realm'
+end

@@ -1,19 +1,18 @@
 //
-//  MainSettingViewController.swift
+//  ChartViewController.swift
 //  Go Study
 //
-//  Created by Himself65 on 2018/2/24.
+//  Created by Himself65 on 2018/2/25.
 //  Copyright © 2018年 Himself65. All rights reserved.
 //
 
 import UIKit
 
-class MainSettingViewController: UIViewController {
+class ChartViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
     }
 
     override func didReceiveMemoryWarning() {
