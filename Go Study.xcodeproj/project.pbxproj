@@ -11,10 +11,6 @@
 		EA051A682031555F00439238 /* ProcessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA051A672031555F00439238 /* ProcessViewController.swift */; };
 		EA051A6B2031564100439238 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA051A6A2031564100439238 /* ProgressView.swift */; };
 		EA051A6D2031578000439238 /* ProcessScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA051A6C2031578000439238 /* ProcessScreen.storyboard */; };
-		EA051A87203179D100439238 /* I Wanna StudyUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EA051A7B203179D100439238 /* I Wanna StudyUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		EA051A8A203179D100439238 /* I Wanna Study.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EA051A72203179D100439238 /* I Wanna Study.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		EA2C92DB2033356F00E528D8 /* FindIdentitierKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2C92DA2033356F00E528D8 /* FindIdentitierKey.swift */; };
-		EA2C92DD2033397700E528D8 /* StaticContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2C92DC2033397700E528D8 /* StaticContent.swift */; };
 		EA2D65062040498F00C02F8A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2D65052040498F00C02F8A /* MainViewController.swift */; };
 		EA2D650C2040502E00C02F8A /* ItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2D650B2040502E00C02F8A /* ItemTableViewController.swift */; };
 		EA2D650E204050A500C02F8A /* ItemTableVIewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2D650D204050A500C02F8A /* ItemTableVIewData.swift */; };
@@ -25,10 +21,13 @@
 		EA2D652620418FCF00C02F8A /* Launch.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA2D652520418FCF00C02F8A /* Launch.xib */; };
 		EA2D65292041AAB400C02F8A /* SettingDataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2D65272041AAB400C02F8A /* SettingDataTableViewController.swift */; };
 		EA44AA4D2042FCFF00BCC7D6 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA44AA4C2042FCFF00BCC7D6 /* ChartViewController.swift */; };
+		EA44AAC620444EC400BCC7D6 /* NewItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA44AAC520444EC400BCC7D6 /* NewItemViewController.swift */; };
 		EA7EFAC020221A50003ADDA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7EFABF20221A50003ADDA5 /* AppDelegate.swift */; };
 		EA7EFAC720221A50003ADDA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA7EFAC520221A50003ADDA5 /* Main.storyboard */; };
 		EA95CA262031AC36001BAE6A /* CoreDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA95CA252031AC36001BAE6A /* CoreDataHandler.swift */; };
 		EAA6797E202F66490002F2F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAA6797D202F66490002F2F5 /* Assets.xcassets */; };
+		EAA8E5A92045BF18004105AA /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAA8E5A62045BEF3004105AA /* Charts.framework */; };
+		EAA8E5AA2045BF18004105AA /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EAA8E5A62045BEF3004105AA /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EAC5A5FB202C99660062AB29 /* FirstLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAC5A5FA202C99660062AB29 /* FirstLaunchScreen.storyboard */; };
 		EACDB5F02024760E00A2C6A8 /* UIResponder-Notice.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACDB5EF2024760E00A2C6A8 /* UIResponder-Notice.swift */; };
 		EACDB5F220249CBB00A2C6A8 /* UIResponder-AlertActionSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACDB5F120249CBB00A2C6A8 /* UIResponder-AlertActionSwift.swift */; };
@@ -38,22 +37,34 @@
 		EAEEB051202C595100F28C99 /* Go_Study.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EAEEB04F202C595100F28C99 /* Go_Study.xcdatamodeld */; };
 		EAEEB056202C6D5900F28C99 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EAEEB055202C6D5900F28C99 /* Settings.bundle */; };
 		EAEEB079202C8AAB00F28C99 /* SettingBundleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEEB078202C8AAB00F28C99 /* SettingBundleHelper.swift */; };
+		EAF0962D2047A7AD002DF003 /* UIColor-RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF0962C2047A7AD002DF003 /* UIColor-RGB.swift */; };
+		EAF096302047A91D002DF003 /* ThemeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF0962F2047A91D002DF003 /* ThemeProtocol.swift */; };
+		EAF096332047AD13002DF003 /* DefailtTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF096322047AD13002DF003 /* DefailtTheme.swift */; };
+		EAF096352047AFA1002DF003 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF096342047AFA1002DF003 /* ThemeManager.swift */; };
+		EAF096372047CCDA002DF003 /* UIViewController-Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF096362047CCDA002DF003 /* UIViewController-Theme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		EA051A85203179D100439238 /* PBXContainerItemProxy */ = {
+		EAA8E5A52045BEF3004105AA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = EA7EFAB420221A50003ADDA5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EA051A7A203179D100439238;
-			remoteInfo = "I Wanna StudyUI";
+			containerPortal = EAA8E5A02045BEF3004105AA /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 65AD9E95D9ED4DC0BD73A743;
+			remoteInfo = Charts;
 		};
-		EA051A88203179D100439238 /* PBXContainerItemProxy */ = {
+		EAA8E5A72045BEF3004105AA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = EA7EFAB420221A50003ADDA5 /* Project object */;
+			containerPortal = EAA8E5A02045BEF3004105AA /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1CBBC58C6CE1EBEE9852CE41;
+			remoteInfo = ChartsTests;
+		};
+		EAA8E5AB2045BF18004105AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAA8E5A02045BEF3004105AA /* Charts.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = EA051A71203179D100439238;
-			remoteInfo = "I Wanna Study";
+			remoteGlobalIDString = A58A4ED274A941CA248EA921;
+			remoteInfo = Charts;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -68,24 +79,13 @@
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EA051A91203179D100439238 /* Embed App Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				EA051A8A203179D100439238 /* I Wanna Study.appex in Embed App Extensions */,
-				EA051A87203179D100439238 /* I Wanna StudyUI.appex in Embed App Extensions */,
-			);
-			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EA44AA51204314DC00BCC7D6 /* Embed Frameworks */ = {
+		EA44AA642043D2BC00BCC7D6 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				EAA8E5AA2045BF18004105AA /* Charts.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -97,10 +97,6 @@
 		EA051A672031555F00439238 /* ProcessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessViewController.swift; sourceTree = "<group>"; };
 		EA051A6A2031564100439238 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
 		EA051A6C2031578000439238 /* ProcessScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProcessScreen.storyboard; sourceTree = "<group>"; };
-		EA051A72203179D100439238 /* I Wanna Study.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "I Wanna Study.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EA051A7B203179D100439238 /* I Wanna StudyUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "I Wanna StudyUI.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EA2C92DA2033356F00E528D8 /* FindIdentitierKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindIdentitierKey.swift; sourceTree = "<group>"; };
-		EA2C92DC2033397700E528D8 /* StaticContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticContent.swift; sourceTree = "<group>"; };
 		EA2D65052040498F00C02F8A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		EA2D650B2040502E00C02F8A /* ItemTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewController.swift; sourceTree = "<group>"; };
 		EA2D650D204050A500C02F8A /* ItemTableVIewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableVIewData.swift; sourceTree = "<group>"; };
@@ -111,6 +107,7 @@
 		EA2D652520418FCF00C02F8A /* Launch.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Launch.xib; sourceTree = "<group>"; };
 		EA2D65272041AAB400C02F8A /* SettingDataTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingDataTableViewController.swift; sourceTree = "<group>"; };
 		EA44AA4C2042FCFF00BCC7D6 /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
+		EA44AAC520444EC400BCC7D6 /* NewItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemViewController.swift; sourceTree = "<group>"; };
 		EA7EFABC20221A50003ADDA5 /* Go Study.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Go Study.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA7EFABF20221A50003ADDA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA7EFAC620221A50003ADDA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -119,6 +116,7 @@
 		EA95CA2020318FFE001BAE6A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		EA95CA252031AC36001BAE6A /* CoreDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHandler.swift; sourceTree = "<group>"; };
 		EAA6797D202F66490002F2F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EAA8E5A02045BEF3004105AA /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "Pods/Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
 		EAC5A5FA202C99660062AB29 /* FirstLaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FirstLaunchScreen.storyboard; sourceTree = "<group>"; };
 		EACDB5EF2024760E00A2C6A8 /* UIResponder-Notice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIResponder-Notice.swift"; sourceTree = "<group>"; };
 		EACDB5F120249CBB00A2C6A8 /* UIResponder-AlertActionSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIResponder-AlertActionSwift.swift"; sourceTree = "<group>"; };
@@ -129,27 +127,19 @@
 		EAEEB050202C595100F28C99 /* StydyData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StydyData.xcdatamodel; sourceTree = "<group>"; };
 		EAEEB055202C6D5900F28C99 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		EAEEB078202C8AAB00F28C99 /* SettingBundleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingBundleHelper.swift; sourceTree = "<group>"; };
+		EAF0962C2047A7AD002DF003 /* UIColor-RGB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-RGB.swift"; sourceTree = "<group>"; };
+		EAF0962F2047A91D002DF003 /* ThemeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeProtocol.swift; sourceTree = "<group>"; };
+		EAF096322047AD13002DF003 /* DefailtTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefailtTheme.swift; sourceTree = "<group>"; };
+		EAF096342047AFA1002DF003 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		EAF096362047CCDA002DF003 /* UIViewController-Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController-Theme.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		EA051A6F203179D100439238 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EA051A78203179D100439238 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		EA7EFAB920221A50003ADDA5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAA8E5A92045BF18004105AA /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +153,8 @@
 				EACDB5F120249CBB00A2C6A8 /* UIResponder-AlertActionSwift.swift */,
 				EACDB5EF2024760E00A2C6A8 /* UIResponder-Notice.swift */,
 				EADF569920327DA3001E2226 /* UINavigationBar-HideLine.swift */,
+				EAF0962C2047A7AD002DF003 /* UIColor-RGB.swift */,
+				EAF096362047CCDA002DF003 /* UIViewController-Theme.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -208,9 +200,18 @@
 			path = Chart;
 			sourceTree = "<group>";
 		};
+		EA44AAC420444DF600BCC7D6 /* NewItem */ = {
+			isa = PBXGroup;
+			children = (
+				EA44AAC520444EC400BCC7D6 /* NewItemViewController.swift */,
+			);
+			path = NewItem;
+			sourceTree = "<group>";
+		};
 		EA6F1D352028A68A0038E829 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				EA44AAC420444DF600BCC7D6 /* NewItem */,
 				EA44AA4820425B7500BCC7D6 /* Chart */,
 				EA2D65132041139400C02F8A /* Add */,
 				EA2D650F204104FA00C02F8A /* Tag */,
@@ -229,8 +230,6 @@
 				EACDB5F32025E67400A2C6A8 /* KeyBoard.swift */,
 				EAEEB078202C8AAB00F28C99 /* SettingBundleHelper.swift */,
 				EA051A6A2031564100439238 /* ProgressView.swift */,
-				EA2C92DA2033356F00E528D8 /* FindIdentitierKey.swift */,
-				EA2C92DC2033397700E528D8 /* StaticContent.swift */,
 				EA2D652220418EA000C02F8A /* Common.swift */,
 			);
 			path = Common;
@@ -260,6 +259,7 @@
 		EA7EFAB320221A50003ADDA5 = {
 			isa = PBXGroup;
 			children = (
+				EAA8E5A02045BEF3004105AA /* Charts.xcodeproj */,
 				EA7EFABE20221A50003ADDA5 /* Go Study */,
 				EA7EFABD20221A50003ADDA5 /* Products */,
 				EACE767320222B5C0009154C /* Frameworks */,
@@ -270,8 +270,6 @@
 			isa = PBXGroup;
 			children = (
 				EA7EFABC20221A50003ADDA5 /* Go Study.app */,
-				EA051A72203179D100439238 /* I Wanna Study.appex */,
-				EA051A7B203179D100439238 /* I Wanna StudyUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -279,12 +277,12 @@
 		EA7EFABE20221A50003ADDA5 /* Go Study */ = {
 			isa = PBXGroup;
 			children = (
-				EA03E21E2031FCE900D5D9D9 /* Ions */,
 				EAEEB055202C6D5900F28C99 /* Settings.bundle */,
 				EACE767220222B5C0009154C /* Go Study.entitlements */,
 				EA7EFACD20221A50003ADDA5 /* Info.plist */,
 				EA7EFABF20221A50003ADDA5 /* AppDelegate.swift */,
-				EAA6797D202F66490002F2F5 /* Assets.xcassets */,
+				EAF096312047A92E002DF003 /* Assets */,
+				EAF0962E2047A90D002DF003 /* Theme */,
 				EA6F1D372028A6B80038E829 /* Common */,
 				EA6F1D352028A68A0038E829 /* Controller */,
 				EA051A662031543100439238 /* Extension */,
@@ -310,6 +308,15 @@
 			path = SettingCell;
 			sourceTree = "<group>";
 		};
+		EAA8E5A12045BEF3004105AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EAA8E5A62045BEF3004105AA /* Charts.framework */,
+				EAA8E5A82045BEF3004105AA /* ChartsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		EACE767320222B5C0009154C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -325,43 +332,28 @@
 			path = Setting;
 			sourceTree = "<group>";
 		};
+		EAF0962E2047A90D002DF003 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				EAF0962F2047A91D002DF003 /* ThemeProtocol.swift */,
+				EAF096322047AD13002DF003 /* DefailtTheme.swift */,
+				EAF096342047AFA1002DF003 /* ThemeManager.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		EAF096312047A92E002DF003 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				EAA6797D202F66490002F2F5 /* Assets.xcassets */,
+				EA03E21E2031FCE900D5D9D9 /* Ions */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EA051A71203179D100439238 /* I Wanna Study */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EA051A8E203179D100439238 /* Build configuration list for PBXNativeTarget "I Wanna Study" */;
-			buildPhases = (
-				EA051A6E203179D100439238 /* Sources */,
-				EA051A6F203179D100439238 /* Frameworks */,
-				EA051A70203179D100439238 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "I Wanna Study";
-			productName = "I Wanna Study";
-			productReference = EA051A72203179D100439238 /* I Wanna Study.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
-		EA051A7A203179D100439238 /* I Wanna StudyUI */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EA051A8B203179D100439238 /* Build configuration list for PBXNativeTarget "I Wanna StudyUI" */;
-			buildPhases = (
-				EA051A77203179D100439238 /* Sources */,
-				EA051A78203179D100439238 /* Frameworks */,
-				EA051A79203179D100439238 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "I Wanna StudyUI";
-			productName = "I Wanna StudyUI";
-			productReference = EA051A7B203179D100439238 /* I Wanna StudyUI.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
 		EA7EFABB20221A50003ADDA5 /* Go Study */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EA7EFAD020221A50003ADDA5 /* Build configuration list for PBXNativeTarget "Go Study" */;
@@ -370,14 +362,12 @@
 				EA7EFAB920221A50003ADDA5 /* Frameworks */,
 				EA7EFABA20221A50003ADDA5 /* Resources */,
 				EA051A63203143AD00439238 /* Embed Watch Content */,
-				EA051A91203179D100439238 /* Embed App Extensions */,
-				EA44AA51204314DC00BCC7D6 /* Embed Frameworks */,
+				EA44AA642043D2BC00BCC7D6 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				EA051A86203179D100439238 /* PBXTargetDependency */,
-				EA051A89203179D100439238 /* PBXTargetDependency */,
+				EAA8E5AC2045BF18004105AA /* PBXTargetDependency */,
 			);
 			name = "Go Study";
 			productName = "Go Study";
@@ -394,14 +384,6 @@
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = Himself65;
 				TargetAttributes = {
-					EA051A71203179D100439238 = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-					};
-					EA051A7A203179D100439238 = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-					};
 					EA7EFABB20221A50003ADDA5 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -411,6 +393,9 @@
 							};
 							com.apple.HealthKit = {
 								enabled = 0;
+							};
+							com.apple.Push = {
+								enabled = 1;
 							};
 						};
 					};
@@ -428,30 +413,37 @@
 			mainGroup = EA7EFAB320221A50003ADDA5;
 			productRefGroup = EA7EFABD20221A50003ADDA5 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = EAA8E5A12045BEF3004105AA /* Products */;
+					ProjectRef = EAA8E5A02045BEF3004105AA /* Charts.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				EA7EFABB20221A50003ADDA5 /* Go Study */,
-				EA051A71203179D100439238 /* I Wanna Study */,
-				EA051A7A203179D100439238 /* I Wanna StudyUI */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		EAA8E5A62045BEF3004105AA /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = EAA8E5A52045BEF3004105AA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EAA8E5A82045BEF3004105AA /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = EAA8E5A72045BEF3004105AA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
-		EA051A70203179D100439238 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EA051A79203179D100439238 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		EA7EFABA20221A50003ADDA5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -469,20 +461,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		EA051A6E203179D100439238 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EA051A77203179D100439238 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		EA7EFAB820221A50003ADDA5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -494,20 +472,24 @@
 				EADF8BC4203073D500BFCDF0 /* UIViewController-MainViewController.swift in Sources */,
 				EA95CA262031AC36001BAE6A /* CoreDataHandler.swift in Sources */,
 				EA051A6B2031564100439238 /* ProgressView.swift in Sources */,
+				EAF096352047AFA1002DF003 /* ThemeManager.swift in Sources */,
+				EAF0962D2047A7AD002DF003 /* UIColor-RGB.swift in Sources */,
 				EA2D6517204113C700C02F8A /* AddViewController.swift in Sources */,
 				EACDB5F42025E67400A2C6A8 /* KeyBoard.swift in Sources */,
+				EAF096372047CCDA002DF003 /* UIViewController-Theme.swift in Sources */,
 				EA2D65062040498F00C02F8A /* MainViewController.swift in Sources */,
+				EA44AAC620444EC400BCC7D6 /* NewItemViewController.swift in Sources */,
+				EAF096302047A91D002DF003 /* ThemeProtocol.swift in Sources */,
 				EA2D652320418EA000C02F8A /* Common.swift in Sources */,
 				EAEEB051202C595100F28C99 /* Go_Study.xcdatamodeld in Sources */,
-				EA2C92DD2033397700E528D8 /* StaticContent.swift in Sources */,
 				EACDB5F02024760E00A2C6A8 /* UIResponder-Notice.swift in Sources */,
 				EA2D650E204050A500C02F8A /* ItemTableVIewData.swift in Sources */,
+				EAF096332047AD13002DF003 /* DefailtTheme.swift in Sources */,
 				EAEEB079202C8AAB00F28C99 /* SettingBundleHelper.swift in Sources */,
 				EA2D650C2040502E00C02F8A /* ItemTableViewController.swift in Sources */,
 				EA2D651B20412DC900C02F8A /* SettingTableViewController.swift in Sources */,
 				EA7EFAC020221A50003ADDA5 /* AppDelegate.swift in Sources */,
 				EA051A682031555F00439238 /* ProcessViewController.swift in Sources */,
-				EA2C92DB2033356F00E528D8 /* FindIdentitierKey.swift in Sources */,
 				EA44AA4D2042FCFF00BCC7D6 /* ChartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -515,15 +497,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		EA051A86203179D100439238 /* PBXTargetDependency */ = {
+		EAA8E5AC2045BF18004105AA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EA051A7A203179D100439238 /* I Wanna StudyUI */;
-			targetProxy = EA051A85203179D100439238 /* PBXContainerItemProxy */;
-		};
-		EA051A89203179D100439238 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = EA051A71203179D100439238 /* I Wanna Study */;
-			targetProxy = EA051A88203179D100439238 /* PBXContainerItemProxy */;
+			name = Charts;
+			targetProxy = EAA8E5AB2045BF18004105AA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -541,66 +518,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		EA051A8C203179D100439238 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = N9CDJBSN2N;
-				INFOPLIST_FILE = "I Wanna StudyUI/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Aimona.Go-Study.I-Wanna-StudyUI";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		EA051A8D203179D100439238 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = N9CDJBSN2N;
-				INFOPLIST_FILE = "I Wanna StudyUI/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Aimona.Go-Study.I-Wanna-StudyUI";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		EA051A8F203179D100439238 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = N9CDJBSN2N;
-				INFOPLIST_FILE = "I Wanna Study/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Aimona.Go-Study.I-Wanna-Study";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		EA051A90203179D100439238 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = N9CDJBSN2N;
-				INFOPLIST_FILE = "I Wanna Study/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Aimona.Go-Study.I-Wanna-Study";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 		EA7EFACE20221A50003ADDA5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -717,6 +634,7 @@
 		EA7EFAD120221A50003ADDA5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Go Study/Go Study.entitlements";
 				CODE_SIGN_STYLE = Automatic;
@@ -738,6 +656,7 @@
 		EA7EFAD220221A50003ADDA5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Go Study/Go Study.entitlements";
 				CODE_SIGN_STYLE = Automatic;
@@ -759,24 +678,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EA051A8B203179D100439238 /* Build configuration list for PBXNativeTarget "I Wanna StudyUI" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EA051A8C203179D100439238 /* Debug */,
-				EA051A8D203179D100439238 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		EA051A8E203179D100439238 /* Build configuration list for PBXNativeTarget "I Wanna Study" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EA051A8F203179D100439238 /* Debug */,
-				EA051A90203179D100439238 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		EA7EFAB720221A50003ADDA5 /* Build configuration list for PBXProject "Go Study" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

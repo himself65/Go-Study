@@ -9,6 +9,8 @@
 import Foundation
 import UIKit
 
+let userDefault = UserDefaults.standard
+
 struct Common {
     struct ViewKey {
         static let chartViewKey = "chartView"
@@ -17,4 +19,24 @@ struct Common {
     }
     static let alwaysOnScreenKey = "alwaysOnScreen"
     static let cannotUsePhoneKey = "cannotUsePhone"
+    struct Data {
+        static let defaultTagKey = "defaultTag"
+    }
+    struct Theme {
+        struct Default {
+            static let Primary = UIColor(red: 255/255, green: 87/255, blue: 34/255, alpha: 1)
+            static let DarkPrimary = UIColor(red: 230/255, green: 74/255, blue: 25/255, alpha: 1)
+            
+            static let Text = UIColor.white
+            
+            static let Icon = UIColor.white
+            
+            static let Accent = UIColor.rgb(red: 68, green: 138, blue: 255)
+            
+            static let LightPrimary = UIColor(red: 255/255, green: 204/255, blue: 188/255, alpha: 1)
+            static let PrimaryText = UIColor(red: 33/255, green: 33/255, blue: 33/255, alpha: 1)
+            static let SecondText = UIColor(red: 177/255, green: 177/255, blue: 177/255, alpha: 1)
+            static let DividerText = UIColor(red: 189/255, green: 189/255, blue: 189/255, alpha: 1)
+        }
+    }
 }

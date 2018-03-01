@@ -20,4 +20,11 @@ class MainViewController: UIViewController {
         
     }
     
+    func changeTheme() {
+        print("shit")
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
 }

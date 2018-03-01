@@ -45,9 +45,9 @@ class AddViewController: UIViewController {
     
     @IBAction func restart() {
         userDefault.set(25, forKey: "defaultDuration")
-        print(userDefault.integer(forKey: "defaultDuration"))
     }
 }
+
 
 extension AddViewController: UIPickerViewDataSource {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -59,6 +59,7 @@ extension AddViewController: UIPickerViewDataSource {
     }
 }
 
+// MARK - TODO - Static Content
 extension AddViewController: UIPickerViewDelegate {
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return "\( (row + 1) * 5) 分钟"
@@ -67,6 +68,7 @@ extension AddViewController: UIPickerViewDelegate {
     func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
         return CGFloat(50)
     }
+    
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         duration = (row + 1) * 5
     }
