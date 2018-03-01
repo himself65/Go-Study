@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+class MainViewController: SuperViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,13 +18,5 @@ class MainViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
-    }
-    
-    func changeTheme() {
-        print("shit")
-    }
-    
-    deinit {
-        NotificationCenter.default.removeObserver(self)
     }
 }

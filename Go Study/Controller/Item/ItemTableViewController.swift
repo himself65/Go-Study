@@ -8,20 +8,32 @@
 
 import UIKit
 
-class ItemTableViewController: UITableViewController {
+class ItemTableViewController: SuperTableViewController {
     
     var data = Array<String>()
     var indexPath: IndexPath?
     override func viewDidLoad() {
         super.viewDidLoad()
-        let searchController = UISearchController(searchResultsController: nil)
         
-        self.navigationItem.searchController = searchController
+        if #available(iOS 11.0, *) {
+            let searchController = UISearchController(searchResultsController: nil)
+            self.navigationItem.searchController = searchController
+        }
     }
+    
+//    override func handleNotification(_ notification: Notification) {
+//        guard let theme = notification.object as? ThemeProtocol else {
+//            return
+//        }
+//    }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.navigationController?.navigationBar.prefersLargeTitles = true
+        
+        if #available(iOS 11.0, *) {
+            self.navigationController?.navigationBar.prefersLargeTitles = true
+        }
+        
         data = loadData_Test()
         tableView.reloadData()
     }
@@ -42,45 +54,8 @@ class ItemTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = data[indexPath.row]
-//        let longPress = UILongPressGestureRecognizer(target: self, action: #selector(longPressGesture(_:)))
-//        cell.addGestureRecognizer(longPress)
+        
         return cell
-    }
-    
-    @objc func longPressGesture(_ tap: UILongPressGestureRecognizer) {
-        
-        let point = tap.location(in: tableView)
-        
-        switch tap.state {
-        case .began:
-            dragBegin(point)
-        case .changed:
-            dragChanged(point)
-        case .ended:
-            dragEnded(point)
-        case .cancelled:
-            dragEnded(point)
-        default:
-            break
-        }
-    }
-    private func dragBegin(_ point: CGPoint) {
-        // 根本不会写
-//        indexPath = tableView.indexPathForRow(at: point)
-//        if indexPath == nil || (indexPath?.section)! > 0 || indexPath?.item == 0
-//        { return }
-//
-//        let item = tableView.cellForRow(at: indexPath!)
-//        item?.isHidden = true
-//
-    }
-    
-    private func dragChanged(_ point: CGPoint) {
-        // 根本不会写
-    }
-    
-    private func dragEnded(_ point: CGPoint) {
-        // 根本不会写
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -110,15 +85,5 @@ class ItemTableViewController: UITableViewController {
 
         return [remove, share, mark]
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

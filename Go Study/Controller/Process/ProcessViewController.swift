@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ProcessViewController: UIViewController {
+class ProcessViewController: SuperViewController {
     
     @IBOutlet weak var progerssView: ProgressView!
     

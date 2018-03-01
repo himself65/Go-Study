@@ -17,6 +17,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
+        let theme = ThemeManager.shareInstance().theme
+        
+        UINavigationBar.appearance().barTintColor = theme.PrimaryColor
+        UINavigationBar.appearance().tintColor = theme.Text_Icon
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor : theme.Text_Icon]
+        
+        UIApplication.shared.statusBarStyle = .lightContent
+        
         return true
     }
     

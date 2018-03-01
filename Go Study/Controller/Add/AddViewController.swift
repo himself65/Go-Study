@@ -12,7 +12,7 @@ struct PomClock {
     var duration: Int
 }
 
-class AddViewController: UIViewController {
+class AddViewController: SuperViewController {
 
     @IBOutlet weak var timePicker: UIPickerView!
     var duration: Int = userDefault.integer(forKey: "defaultDuration")
