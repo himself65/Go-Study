@@ -1,12 +1,6 @@
 # Go Study
 
-![Platform](https://img.shields.io/badge/platform-iOS-lightgrey.svg)
-
-![Language](https://img.shields.io/badge/Language-Swift4-orange.svg)
-
-![process](http://progressed.io/bar/30?title=process)
-
-[![Build Status](https://travis-ci.org/Himself65/Go-Study.svg?branch=master)](https://travis-ci.org/Himself65/Go-Study)
+![Platform](https://img.shields.io/badge/platform-iOS-lightgrey.svg)![Language](https://img.shields.io/badge/Language-Swift4-orange.svg)![process](http://progressed.io/bar/30?title=process)[![Build Status](https://travis-ci.org/Himself65/Go-Study.svg?branch=master)](https://travis-ci.org/Himself65/Go-Study)
 
 须知：
 **此项目已参加 第十九届“中国移动”和教育“杯” 全国中小学生电脑制作活动**
