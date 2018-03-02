@@ -8,28 +8,18 @@
 
 import UIKit
 
-enum ThemeCell {
-    case Default
-    case Dark
-    
-    var themeType: ThemeType {
-        get {
-            switch self {
-            case .Default:
-                return ThemeType.defaultTheme
-            case .Dark:
-                return ThemeType.darkTheme
-            }
-        }
-    }
+fileprivate func themeConverToIndexPath() -> IndexPath{
+    let row = ThemeManager.manager?.theme.Index
+    return IndexPath(row: row ?? 0, section: 0)
 }
 
 class ThemeTableViewController: SuperTableViewController {
     
-    var selectedIndexPath: IndexPath? = nil
+    var selectedIndexPath: IndexPath = themeConverToIndexPath()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "主题选择"
         
     }
 
@@ -39,10 +29,12 @@ class ThemeTableViewController: SuperTableViewController {
     }
 
     // MARK: - Table view data source
-    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        selectedIndexPath = indexPath
-        print("\(indexPath.row)")
+        let type: ThemeType = ThemeType(rawValue: indexPath.row) ?? ThemeType.defaultTheme
+        ThemeManager.switcherTheme(type)
+        tableView.cellForRow(at: selectedIndexPath)?.accessoryType = .none
+        tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
         tableView.deselectRow(at: indexPath, animated: true)
+        self.selectedIndexPath = indexPath
     }
 }

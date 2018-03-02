@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NewItemViewController: UIViewController {
+class NewItemViewController: SuperViewController {
     @IBOutlet weak var tagSelectButton: UIButton!
     
     override func viewDidLoad() {

@@ -41,7 +41,7 @@ class TextCellData: CellData {
     }
 }
 
-class SettingDataTableViewController: UITableViewController {
+class SettingDataTableViewController: SuperTableViewController {
     
     var data = Array<CellData>()
     
@@ -59,12 +59,10 @@ class SettingDataTableViewController: UITableViewController {
         if segue.identifier == "settingDetail" {
             data.append(CellData())
         }
-        
         tableView.reloadData()
     }
     
     // MARK: - Table view data source
-
     override func numberOfSections(in tableView: UITableView) -> Int {
         
         return 1

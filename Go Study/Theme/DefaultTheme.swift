@@ -10,6 +10,11 @@ import Foundation
 import UIKit
 
 class DefaultTheme: ThemeProtocol {
+    var Index: Int {
+        get {
+            return 0
+        }
+    }
     var PrimaryColor: UIColor {
         get {
             return Common.Theme.Default.Primary

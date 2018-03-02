@@ -10,6 +10,11 @@ import Foundation
 import UIKit
 
 class DarkTheme: ThemeProtocol {
+    var Index: Int{
+        get {
+            return 1
+        }
+    }
     
     var PrimaryColor: UIColor {
         get {

@@ -18,7 +18,7 @@ class SettingsBundleHelper {
         userDefault.set(25, forKey: "defaultDuration")
         userDefault.set(false, forKey: Common.alwaysOnScreenKey)
         userDefault.set(false, forKey: Common.cannotUsePhoneKey)
-        
+        userDefault.set(DefaultTheme(), forKey: Common.Data.themeKey)
     }
     
     class func setVersionAndBuildNumber() {

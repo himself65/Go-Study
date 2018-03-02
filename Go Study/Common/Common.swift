@@ -21,6 +21,7 @@ struct Common {
     static let cannotUsePhoneKey = "cannotUsePhone"
     struct Data {
         static let defaultTagKey = "defaultTag"
+        static let themeKey = "theme"
     }
     struct Theme {
         struct Dark {

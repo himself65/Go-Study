@@ -12,6 +12,7 @@
 		EA050A2E2047F5F700AC848B /* SuperTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA050A2D2047F5F600AC848B /* SuperTableViewController.swift */; };
 		EA050A312047F7FC00AC848B /* ThemeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA050A302047F7FC00AC848B /* ThemeTableViewController.swift */; };
 		EA050A332047FC3E00AC848B /* DarkTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA050A322047FC3E00AC848B /* DarkTheme.swift */; };
+		EA050A362048281A00AC848B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA050A352048281A00AC848B /* DetailViewController.swift */; };
 		EA051A682031555F00439238 /* ProcessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA051A672031555F00439238 /* ProcessViewController.swift */; };
 		EA051A6B2031564100439238 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA051A6A2031564100439238 /* ProgressView.swift */; };
 		EA051A6D2031578000439238 /* ProcessScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA051A6C2031578000439238 /* ProcessScreen.storyboard */; };
@@ -30,8 +31,6 @@
 		EA7EFAC720221A50003ADDA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA7EFAC520221A50003ADDA5 /* Main.storyboard */; };
 		EA95CA262031AC36001BAE6A /* CoreDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA95CA252031AC36001BAE6A /* CoreDataHandler.swift */; };
 		EAA6797E202F66490002F2F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAA6797D202F66490002F2F5 /* Assets.xcassets */; };
-		EAA8E5A92045BF18004105AA /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAA8E5A62045BEF3004105AA /* Charts.framework */; };
-		EAA8E5AA2045BF18004105AA /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EAA8E5A62045BEF3004105AA /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EAC5A5FB202C99660062AB29 /* FirstLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAC5A5FA202C99660062AB29 /* FirstLaunchScreen.storyboard */; };
 		EACDB5F02024760E00A2C6A8 /* UIResponder-Notice.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACDB5EF2024760E00A2C6A8 /* UIResponder-Notice.swift */; };
 		EACDB5F220249CBB00A2C6A8 /* UIResponder-AlertActionSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACDB5F120249CBB00A2C6A8 /* UIResponder-AlertActionSwift.swift */; };
@@ -46,26 +45,29 @@
 		EAF096332047AD13002DF003 /* DefaultTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF096322047AD13002DF003 /* DefaultTheme.swift */; };
 		EAF096352047AFA1002DF003 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF096342047AFA1002DF003 /* ThemeManager.swift */; };
 		EAF096372047CCDA002DF003 /* UIViewController-Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF096362047CCDA002DF003 /* UIViewController-Theme.swift */; };
+		EAFBE9D82048424300E1E81C /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAFBE9D52048423F00E1E81C /* Charts.framework */; };
+		EAFBE9D92048424300E1E81C /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EAFBE9D52048423F00E1E81C /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EAFBE9DD2048FFAD00E1E81C /* ThemeManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFBE9DC2048FFAD00E1E81C /* ThemeManagerProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		EAA8E5A52045BEF3004105AA /* PBXContainerItemProxy */ = {
+		EAFBE9D42048423F00E1E81C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = EAA8E5A02045BEF3004105AA /* Charts.xcodeproj */;
+			containerPortal = EAFBE9CF2048423D00E1E81C /* Charts.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 65AD9E95D9ED4DC0BD73A743;
 			remoteInfo = Charts;
 		};
-		EAA8E5A72045BEF3004105AA /* PBXContainerItemProxy */ = {
+		EAFBE9D62048423F00E1E81C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = EAA8E5A02045BEF3004105AA /* Charts.xcodeproj */;
+			containerPortal = EAFBE9CF2048423D00E1E81C /* Charts.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 1CBBC58C6CE1EBEE9852CE41;
 			remoteInfo = ChartsTests;
 		};
-		EAA8E5AB2045BF18004105AA /* PBXContainerItemProxy */ = {
+		EAFBE9DA2048424300E1E81C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = EAA8E5A02045BEF3004105AA /* Charts.xcodeproj */;
+			containerPortal = EAFBE9CF2048423D00E1E81C /* Charts.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = A58A4ED274A941CA248EA921;
 			remoteInfo = Charts;
@@ -89,7 +91,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				EAA8E5AA2045BF18004105AA /* Charts.framework in Embed Frameworks */,
+				EAFBE9D92048424300E1E81C /* Charts.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -102,6 +104,7 @@
 		EA050A2D2047F5F600AC848B /* SuperTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperTableViewController.swift; sourceTree = "<group>"; };
 		EA050A302047F7FC00AC848B /* ThemeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeTableViewController.swift; sourceTree = "<group>"; };
 		EA050A322047FC3E00AC848B /* DarkTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkTheme.swift; sourceTree = "<group>"; };
+		EA050A352048281A00AC848B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		EA051A672031555F00439238 /* ProcessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessViewController.swift; sourceTree = "<group>"; };
 		EA051A6A2031564100439238 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
 		EA051A6C2031578000439238 /* ProcessScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProcessScreen.storyboard; sourceTree = "<group>"; };
@@ -124,7 +127,6 @@
 		EA95CA2020318FFE001BAE6A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		EA95CA252031AC36001BAE6A /* CoreDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHandler.swift; sourceTree = "<group>"; };
 		EAA6797D202F66490002F2F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		EAA8E5A02045BEF3004105AA /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "Pods/Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
 		EAC5A5FA202C99660062AB29 /* FirstLaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FirstLaunchScreen.storyboard; sourceTree = "<group>"; };
 		EACDB5EF2024760E00A2C6A8 /* UIResponder-Notice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIResponder-Notice.swift"; sourceTree = "<group>"; };
 		EACDB5F120249CBB00A2C6A8 /* UIResponder-AlertActionSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIResponder-AlertActionSwift.swift"; sourceTree = "<group>"; };
@@ -140,6 +142,8 @@
 		EAF096322047AD13002DF003 /* DefaultTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTheme.swift; sourceTree = "<group>"; };
 		EAF096342047AFA1002DF003 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		EAF096362047CCDA002DF003 /* UIViewController-Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController-Theme.swift"; sourceTree = "<group>"; };
+		EAFBE9CF2048423D00E1E81C /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = Pods/Charts/Charts.xcodeproj; sourceTree = "<group>"; };
+		EAFBE9DC2048FFAD00E1E81C /* ThemeManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManagerProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,7 +151,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAA8E5A92045BF18004105AA /* Charts.framework in Frameworks */,
+				EAFBE9D82048424300E1E81C /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,6 +164,14 @@
 				EA050A302047F7FC00AC848B /* ThemeTableViewController.swift */,
 			);
 			path = Theme;
+			sourceTree = "<group>";
+		};
+		EA050A34204827F200AC848B /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				EA050A352048281A00AC848B /* DetailViewController.swift */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 		EA051A662031543100439238 /* Extension */ = {
@@ -192,12 +204,12 @@
 			path = Item;
 			sourceTree = "<group>";
 		};
-		EA2D650F204104FA00C02F8A /* Tag */ = {
+		EA2D650F204104FA00C02F8A /* Tag removed */ = {
 			isa = PBXGroup;
 			children = (
 				EA2D65112041051900C02F8A /* TagTableViewController.swift */,
 			);
-			path = Tag;
+			path = "Tag removed";
 			sourceTree = "<group>";
 		};
 		EA2D65132041139400C02F8A /* Add */ = {
@@ -233,8 +245,9 @@
 				EA44AAC420444DF600BCC7D6 /* NewItem */,
 				EA44AA4820425B7500BCC7D6 /* Chart */,
 				EA2D65132041139400C02F8A /* Add */,
-				EA2D650F204104FA00C02F8A /* Tag */,
+				EA2D650F204104FA00C02F8A /* Tag removed */,
 				EA2D650720404BE000C02F8A /* Item */,
+				EA050A34204827F200AC848B /* Detail */,
 				EA2D65042040496400C02F8A /* Main */,
 				EA93F405203F416600FA8B29 /* Process */,
 				EA93F406203F417B00FA8B29 /* SettingCell */,
@@ -278,7 +291,7 @@
 		EA7EFAB320221A50003ADDA5 = {
 			isa = PBXGroup;
 			children = (
-				EAA8E5A02045BEF3004105AA /* Charts.xcodeproj */,
+				EAFBE9CF2048423D00E1E81C /* Charts.xcodeproj */,
 				EA7EFABE20221A50003ADDA5 /* Go Study */,
 				EA7EFABD20221A50003ADDA5 /* Products */,
 				EACE767320222B5C0009154C /* Frameworks */,
@@ -327,15 +340,6 @@
 			path = SettingCell;
 			sourceTree = "<group>";
 		};
-		EAA8E5A12045BEF3004105AA /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				EAA8E5A62045BEF3004105AA /* Charts.framework */,
-				EAA8E5A82045BEF3004105AA /* ChartsTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		EACE767320222B5C0009154C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -358,6 +362,7 @@
 				EAF096322047AD13002DF003 /* DefaultTheme.swift */,
 				EA050A322047FC3E00AC848B /* DarkTheme.swift */,
 				EAF096342047AFA1002DF003 /* ThemeManager.swift */,
+				EAFBE9DC2048FFAD00E1E81C /* ThemeManagerProtocol.swift */,
 			);
 			path = Theme;
 			sourceTree = "<group>";
@@ -369,6 +374,15 @@
 				EA03E21E2031FCE900D5D9D9 /* Ions */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		EAFBE9D02048423D00E1E81C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EAFBE9D52048423F00E1E81C /* Charts.framework */,
+				EAFBE9D72048423F00E1E81C /* ChartsTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -387,7 +401,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				EAA8E5AC2045BF18004105AA /* PBXTargetDependency */,
+				EAFBE9DB2048424300E1E81C /* PBXTargetDependency */,
 			);
 			name = "Go Study";
 			productName = "Go Study";
@@ -435,8 +449,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = EAA8E5A12045BEF3004105AA /* Products */;
-					ProjectRef = EAA8E5A02045BEF3004105AA /* Charts.xcodeproj */;
+					ProductGroup = EAFBE9D02048423D00E1E81C /* Products */;
+					ProjectRef = EAFBE9CF2048423D00E1E81C /* Charts.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -447,18 +461,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		EAA8E5A62045BEF3004105AA /* Charts.framework */ = {
+		EAFBE9D52048423F00E1E81C /* Charts.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Charts.framework;
-			remoteRef = EAA8E5A52045BEF3004105AA /* PBXContainerItemProxy */;
+			remoteRef = EAFBE9D42048423F00E1E81C /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		EAA8E5A82045BEF3004105AA /* ChartsTests.xctest */ = {
+		EAFBE9D72048423F00E1E81C /* ChartsTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = ChartsTests.xctest;
-			remoteRef = EAA8E5A72045BEF3004105AA /* PBXContainerItemProxy */;
+			remoteRef = EAFBE9D62048423F00E1E81C /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -504,7 +518,9 @@
 				EA050A2E2047F5F700AC848B /* SuperTableViewController.swift in Sources */,
 				EA2D652320418EA000C02F8A /* Common.swift in Sources */,
 				EAEEB051202C595100F28C99 /* Go_Study.xcdatamodeld in Sources */,
+				EA050A362048281A00AC848B /* DetailViewController.swift in Sources */,
 				EACDB5F02024760E00A2C6A8 /* UIResponder-Notice.swift in Sources */,
+				EAFBE9DD2048FFAD00E1E81C /* ThemeManagerProtocol.swift in Sources */,
 				EA2D650E204050A500C02F8A /* ItemTableVIewData.swift in Sources */,
 				EA050A2C2047F28200AC848B /* SuperViewController.swift in Sources */,
 				EAF096332047AD13002DF003 /* DefaultTheme.swift in Sources */,
@@ -521,10 +537,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		EAA8E5AC2045BF18004105AA /* PBXTargetDependency */ = {
+		EAFBE9DB2048424300E1E81C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Charts;
-			targetProxy = EAA8E5AB2045BF18004105AA /* PBXContainerItemProxy */;
+			targetProxy = EAFBE9DA2048424300E1E81C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -666,7 +682,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks",
 				);
 				INFOPLIST_FILE = "Go Study/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -688,7 +703,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks",
 				);
 				INFOPLIST_FILE = "Go Study/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

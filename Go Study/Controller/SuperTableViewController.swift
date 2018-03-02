@@ -8,34 +8,29 @@
 
 import UIKit
 
-class SuperTableViewController: UITableViewController {
+class SuperTableViewController: UITableViewController, ThemeManagerProtocol {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.changeTheme()
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        
-    }
-    
     func changeTheme() {
-        NotificationCenter.default.addObserver(self, selector: #selector(handleNotification(_:)), name: NSNotification.Name(rawValue: ThemeUpdateNotification), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(handelNotification(notification:)), name: NSNotification.Name(rawValue: ThemeUpdateNotification), object: nil)
         ThemeManager.themeUpdate()
     }
     
-    @objc func handleNotification(_ notification: Notification) {
+    @objc func handelNotification(notification: NSNotification) {
         guard let theme = notification.object as? ThemeProtocol else {
             return
         }
-        self.navigationController?.navigationBar.backgroundColor = theme.PrimaryColor
-        self.tableView.backgroundColor = UIColor.rgb(red: 250, green: 250, blue: 250)
-        // Todo
+        self.navigationController?.navigationBar.barTintColor = theme.PrimaryColor
+        self.navigationController?.navigationBar.tintColor = theme.Text_Icon
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor : theme.Text_Icon]
     }
+    
     
     deinit {
         NotificationCenter.default.removeObserver(self)
     }
-
 }

@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 protocol ThemeProtocol {
+    var Index: Int {get}
     var PrimaryColor: UIColor {get}
     var LightPrimaryColor: UIColor {get}
     var DarkPrimaryColor: UIColor {get}

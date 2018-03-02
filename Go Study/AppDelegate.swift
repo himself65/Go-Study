@@ -17,14 +17,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        let theme = ThemeManager.shareInstance().theme
         
-        UINavigationBar.appearance().barTintColor = theme.PrimaryColor
-        UINavigationBar.appearance().tintColor = theme.Text_Icon
-        UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor : theme.Text_Icon]
-        
-        UIApplication.shared.statusBarStyle = .lightContent
-        
+        // MARK - 主题在 SuperViewController 和 SuperTableViewController 中修改
+//        let theme = ThemeManager.manager!.theme
+//
+//        UINavigationBar.appearance().barTintColor = theme.PrimaryColor
+//        UINavigationBar.appearance().backgroundColor = theme.Text_Icon
+//
+//        UINavigationBar.appearance().tintColor = theme.Text_Icon
+//        UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor : theme.Text_Icon]
+//
+//
+//        UITabBar.appearance().tintColor = theme.PrimaryColor
+//        UITabBar.appearance().backgroundColor = theme.Text_Icon
+//        UIApplication.shared.statusBarStyle = .lightContent
         return true
     }
     

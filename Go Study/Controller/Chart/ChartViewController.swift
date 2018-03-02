@@ -15,7 +15,7 @@ private class CubicLineSampleFillFormatter: IFillFormatter {
     }
 }
 
-class ChartViewController: UIViewController {
+class ChartViewController: SuperViewController {
     
     @IBOutlet weak var chart: LineChartView!
     
@@ -31,6 +31,7 @@ class ChartViewController: UIViewController {
     }
     
     private func initChart() {
+        
         chart.dragEnabled = false
         chart.chartDescription?.text = "统计"
         chart.noDataText = "你还没有可展示的数据"

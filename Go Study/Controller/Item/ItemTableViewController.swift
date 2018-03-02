@@ -12,31 +12,45 @@ class ItemTableViewController: SuperTableViewController {
     
     var data = Array<String>()
     var indexPath: IndexPath?
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        if #available(iOS 11.0, *) {
-            let searchController = UISearchController(searchResultsController: nil)
-            self.navigationItem.searchController = searchController
-        }
+        initNavigationBar()
     }
     
-//    override func handleNotification(_ notification: Notification) {
-//        guard let theme = notification.object as? ThemeProtocol else {
-//            return
-//        }
-//    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+    private func initNavigationBar() {
+        let theme = ThemeManager.shareInstance().theme
         
+        // MARK -- SearchController Attitube
         if #available(iOS 11.0, *) {
-            self.navigationController?.navigationBar.prefersLargeTitles = true
+            let searchController = UISearchController(searchResultsController: nil)
+            searchController.searchBar.placeholder = "搜索"
+            for subView in searchController.searchBar.subviews {
+                subView.backgroundColor = theme.Text_Icon
+            }
+            definesPresentationContext = true
+            self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.defaultPrompt)
+            self.navigationController?.navigationBar.shadowImage = UIImage()
+            self.navigationController?.navigationBar.isTranslucent = true
+            self.navigationItem.searchController = searchController
         }
         
+        // MARK -- Large Title Attitube
+        //  iOS 11.0
+        if #available(iOS 11.0, *) {
+            self.navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedStringKey.foregroundColor : theme.Text_Icon]
+            self.navigationController?.navigationBar.prefersLargeTitles = true
+        }
+        // TODO 还是有阴影，不知道是不是bug
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidLoad()
         data = loadData_Test()
         tableView.reloadData()
     }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -52,7 +66,7 @@ class ItemTableViewController: SuperTableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "detailCell", for: indexPath)
         cell.textLabel?.text = data[indexPath.row]
         
         return cell
