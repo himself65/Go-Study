@@ -7,6 +7,13 @@
 //
 
 import Foundation
+extension Common {
+    struct UserDefault {
+        static let IdKey = "id"
+        static let alwaysOnScreenKey = Common.alwaysOnScreenKey
+        static let cannotUsePhoneKey = Common.cannotUsePhoneKey
+    }
+}
 
 class SettingsBundleHelper {
     struct SettingsBundleKeys {
@@ -14,13 +21,16 @@ class SettingsBundleHelper {
         static let AppVersionKey = "version_preference"
     }
     
+    // MARK - When First Launch App, Do this Function
     class func setDefaultSetting() {
         userDefault.set(25, forKey: "defaultDuration")
-        userDefault.set(false, forKey: Common.alwaysOnScreenKey)
-        userDefault.set(false, forKey: Common.cannotUsePhoneKey)
-        userDefault.set(DefaultTheme(), forKey: Common.Data.themeKey)
+        userDefault.set(1, forKey: Common.UserDefault.IdKey)
+        userDefault.set(false, forKey: Common.UserDefault.alwaysOnScreenKey)
+        userDefault.set(false, forKey: Common.UserDefault.cannotUsePhoneKey)
+        userDefault.set(0, forKey: Common.Data.themeKey)
     }
     
+    // MARK - Get version
     class func setVersionAndBuildNumber() {
         let version: String = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as! String
         UserDefaults.standard.set(version, forKey: "version_preference")

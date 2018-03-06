@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6934FF7C2BE5DDDA6E2B1492 /* Pods_Go_Study.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10E663A14F71A079327CEEAD /* Pods_Go_Study.framework */; };
-		EA03E21F2031FCEA00D5D9D9 /* Ions in Resources */ = {isa = PBXBuildFile; fileRef = EA03E21E2031FCE900D5D9D9 /* Ions */; };
+		D044ACE2927C9A820E12E2E6 /* Pods_Go_Study.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B3D050A0B150B8D3DA64007 /* Pods_Go_Study.framework */; };
 		EA050A2C2047F28200AC848B /* SuperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA050A2B2047F28200AC848B /* SuperViewController.swift */; };
 		EA050A2E2047F5F700AC848B /* SuperTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA050A2D2047F5F600AC848B /* SuperTableViewController.swift */; };
 		EA050A312047F7FC00AC848B /* ThemeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA050A302047F7FC00AC848B /* ThemeTableViewController.swift */; };
@@ -24,7 +23,6 @@
 		EA2D6517204113C700C02F8A /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2D6516204113C700C02F8A /* AddViewController.swift */; };
 		EA2D651B20412DC900C02F8A /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2D651A20412DC900C02F8A /* SettingTableViewController.swift */; };
 		EA2D652320418EA000C02F8A /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2D652220418EA000C02F8A /* Common.swift */; };
-		EA2D652620418FCF00C02F8A /* Launch.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA2D652520418FCF00C02F8A /* Launch.xib */; };
 		EA2D65292041AAB400C02F8A /* SettingDataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2D65272041AAB400C02F8A /* SettingDataTableViewController.swift */; };
 		EA44AA4D2042FCFF00BCC7D6 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA44AA4C2042FCFF00BCC7D6 /* ChartViewController.swift */; };
 		EA44AAC620444EC400BCC7D6 /* NewItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA44AAC520444EC400BCC7D6 /* NewItemViewController.swift */; };
@@ -32,12 +30,15 @@
 		EA7EFAC720221A50003ADDA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA7EFAC520221A50003ADDA5 /* Main.storyboard */; };
 		EA95CA262031AC36001BAE6A /* CoreDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA95CA252031AC36001BAE6A /* CoreDataHandler.swift */; };
 		EAA6797E202F66490002F2F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAA6797D202F66490002F2F5 /* Assets.xcassets */; };
-		EAC5A5FB202C99660062AB29 /* FirstLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAC5A5FA202C99660062AB29 /* FirstLaunchScreen.storyboard */; };
 		EACDB5F02024760E00A2C6A8 /* UIResponder-Notice.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACDB5EF2024760E00A2C6A8 /* UIResponder-Notice.swift */; };
 		EACDB5F220249CBB00A2C6A8 /* UIResponder-AlertActionSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACDB5F120249CBB00A2C6A8 /* UIResponder-AlertActionSwift.swift */; };
 		EACDB5F42025E67400A2C6A8 /* KeyBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACDB5F32025E67400A2C6A8 /* KeyBoard.swift */; };
 		EADF569A20327DA4001E2226 /* UINavigationBar-HideLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADF569920327DA3001E2226 /* UINavigationBar-HideLine.swift */; };
 		EADF8BC4203073D500BFCDF0 /* UIViewController-MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADF8BC3203073D500BFCDF0 /* UIViewController-MainViewController.swift */; };
+		EAE9DD61204D9DAA00B2E329 /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAE9DD60204D9DAA00B2E329 /* Launch.storyboard */; };
+		EAE9DD65204DA08100B2E329 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA1ED9D5204AD45B0087B039 /* Charts.framework */; };
+		EAE9DD66204DA08100B2E329 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EA1ED9D5204AD45B0087B039 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EAE9DD6D204DACCE00B2E329 /* LocalNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE9DD6C204DACCE00B2E329 /* LocalNotification.swift */; };
 		EAEEB051202C595100F28C99 /* Go_Study.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EAEEB04F202C595100F28C99 /* Go_Study.xcdatamodeld */; };
 		EAEEB056202C6D5900F28C99 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EAEEB055202C6D5900F28C99 /* Settings.bundle */; };
 		EAEEB079202C8AAB00F28C99 /* SettingBundleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEEB078202C8AAB00F28C99 /* SettingBundleHelper.swift */; };
@@ -60,12 +61,23 @@
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EAE9DD67204DA08100B2E329 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EAE9DD66204DA08100B2E329 /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		026C47FDEFDBFBAF6CA65408 /* Pods-Go Study.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Go Study.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Go Study/Pods-Go Study.debug.xcconfig"; sourceTree = "<group>"; };
-		10E663A14F71A079327CEEAD /* Pods_Go_Study.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Go_Study.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC88254E9879A2CAA3B1FE4B /* Pods-Go Study.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Go Study.release.xcconfig"; path = "Pods/Target Support Files/Pods-Go Study/Pods-Go Study.release.xcconfig"; sourceTree = "<group>"; };
+		7674D67B9372A55A0CAD02DA /* Pods-Go Study.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Go Study.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Go Study/Pods-Go Study.debug.xcconfig"; sourceTree = "<group>"; };
+		792710ADCD9984A878A0D75C /* Pods-Go Study.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Go Study.release.xcconfig"; path = "Pods/Target Support Files/Pods-Go Study/Pods-Go Study.release.xcconfig"; sourceTree = "<group>"; };
+		7B3D050A0B150B8D3DA64007 /* Pods_Go_Study.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Go_Study.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA03E21E2031FCE900D5D9D9 /* Ions */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Ions; sourceTree = "<group>"; };
 		EA050A2B2047F28200AC848B /* SuperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperViewController.swift; sourceTree = "<group>"; };
 		EA050A2D2047F5F600AC848B /* SuperTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperTableViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +87,7 @@
 		EA051A672031555F00439238 /* ProcessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessViewController.swift; sourceTree = "<group>"; };
 		EA051A6A2031564100439238 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
 		EA051A6C2031578000439238 /* ProcessScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProcessScreen.storyboard; sourceTree = "<group>"; };
+		EA1ED9D5204AD45B0087B039 /* Charts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Charts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA2D65052040498F00C02F8A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		EA2D650B2040502E00C02F8A /* ItemTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewController.swift; sourceTree = "<group>"; };
 		EA2D650D204050A500C02F8A /* ItemTableVIewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableVIewData.swift; sourceTree = "<group>"; };
@@ -82,7 +95,6 @@
 		EA2D6516204113C700C02F8A /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		EA2D651A20412DC900C02F8A /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
 		EA2D652220418EA000C02F8A /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
-		EA2D652520418FCF00C02F8A /* Launch.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Launch.xib; sourceTree = "<group>"; };
 		EA2D65272041AAB400C02F8A /* SettingDataTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingDataTableViewController.swift; sourceTree = "<group>"; };
 		EA44AA4C2042FCFF00BCC7D6 /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
 		EA44AAC520444EC400BCC7D6 /* NewItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemViewController.swift; sourceTree = "<group>"; };
@@ -94,13 +106,14 @@
 		EA95CA2020318FFE001BAE6A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		EA95CA252031AC36001BAE6A /* CoreDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHandler.swift; sourceTree = "<group>"; };
 		EAA6797D202F66490002F2F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		EAC5A5FA202C99660062AB29 /* FirstLaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FirstLaunchScreen.storyboard; sourceTree = "<group>"; };
 		EACDB5EF2024760E00A2C6A8 /* UIResponder-Notice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIResponder-Notice.swift"; sourceTree = "<group>"; };
 		EACDB5F120249CBB00A2C6A8 /* UIResponder-AlertActionSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIResponder-AlertActionSwift.swift"; sourceTree = "<group>"; };
 		EACDB5F32025E67400A2C6A8 /* KeyBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyBoard.swift; sourceTree = "<group>"; };
 		EACE767220222B5C0009154C /* Go Study.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Go Study.entitlements"; sourceTree = "<group>"; };
 		EADF569920327DA3001E2226 /* UINavigationBar-HideLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationBar-HideLine.swift"; sourceTree = "<group>"; };
 		EADF8BC3203073D500BFCDF0 /* UIViewController-MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController-MainViewController.swift"; sourceTree = "<group>"; };
+		EAE9DD60204D9DAA00B2E329 /* Launch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Launch.storyboard; sourceTree = "<group>"; };
+		EAE9DD6C204DACCE00B2E329 /* LocalNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotification.swift; sourceTree = "<group>"; };
 		EAEEB050202C595100F28C99 /* StydyData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StydyData.xcdatamodel; sourceTree = "<group>"; };
 		EAEEB055202C6D5900F28C99 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		EAEEB078202C8AAB00F28C99 /* SettingBundleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingBundleHelper.swift; sourceTree = "<group>"; };
@@ -117,7 +130,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6934FF7C2BE5DDDA6E2B1492 /* Pods_Go_Study.framework in Frameworks */,
+				D044ACE2927C9A820E12E2E6 /* Pods_Go_Study.framework in Frameworks */,
+				EAE9DD65204DA08100B2E329 /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,7 +141,8 @@
 		9E02E1713972FA06369A6F48 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				10E663A14F71A079327CEEAD /* Pods_Go_Study.framework */,
+				EA1ED9D5204AD45B0087B039 /* Charts.framework */,
+				7B3D050A0B150B8D3DA64007 /* Pods_Go_Study.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -245,9 +260,8 @@
 			isa = PBXGroup;
 			children = (
 				EA7EFAC520221A50003ADDA5 /* Main.storyboard */,
-				EAC5A5FA202C99660062AB29 /* FirstLaunchScreen.storyboard */,
 				EA051A6C2031578000439238 /* ProcessScreen.storyboard */,
-				EA2D652520418FCF00C02F8A /* Launch.xib */,
+				EAE9DD60204D9DAA00B2E329 /* Launch.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -290,6 +304,7 @@
 				EAF096312047A92E002DF003 /* Assets */,
 				EAF0962E2047A90D002DF003 /* Theme */,
 				EA6F1D372028A6B80038E829 /* Common */,
+				EAE9DD68204DAC9000B2E329 /* Notification */,
 				EA6F1D352028A68A0038E829 /* Controller */,
 				EA051A662031543100439238 /* Extension */,
 				EA6F1D3A202971070038E829 /* Model */,
@@ -322,13 +337,29 @@
 			path = Setting;
 			sourceTree = "<group>";
 		};
+		EAE9DD68204DAC9000B2E329 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				EAE9DD69204DACA600B2E329 /* Local */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		EAE9DD69204DACA600B2E329 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				EAE9DD6C204DACCE00B2E329 /* LocalNotification.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
 		EAF0962E2047A90D002DF003 /* Theme */ = {
 			isa = PBXGroup;
 			children = (
+				EAF096342047AFA1002DF003 /* ThemeManager.swift */,
 				EAF0962F2047A91D002DF003 /* ThemeProtocol.swift */,
 				EAF096322047AD13002DF003 /* DefaultTheme.swift */,
 				EA050A322047FC3E00AC848B /* DarkTheme.swift */,
-				EAF096342047AFA1002DF003 /* ThemeManager.swift */,
 				EAFBE9DC2048FFAD00E1E81C /* ThemeManagerProtocol.swift */,
 			);
 			path = Theme;
@@ -346,8 +377,8 @@
 		F3BFF289BCEBF18775D18925 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				026C47FDEFDBFBAF6CA65408 /* Pods-Go Study.debug.xcconfig */,
-				CC88254E9879A2CAA3B1FE4B /* Pods-Go Study.release.xcconfig */,
+				7674D67B9372A55A0CAD02DA /* Pods-Go Study.debug.xcconfig */,
+				792710ADCD9984A878A0D75C /* Pods-Go Study.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -366,6 +397,7 @@
 				EA051A63203143AD00439238 /* Embed Watch Content */,
 				8369973849DB1B4B8F57950C /* [CP] Embed Pods Frameworks */,
 				CC722D2DD50C16B7C9F39333 /* [CP] Copy Pods Resources */,
+				EAE9DD67204DA08100B2E329 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -391,7 +423,7 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.DataProtection = {
-								enabled = 1;
+								enabled = 0;
 							};
 							com.apple.HealthKit = {
 								enabled = 0;
@@ -427,13 +459,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAC5A5FB202C99660062AB29 /* FirstLaunchScreen.storyboard in Resources */,
-				EA2D652620418FCF00C02F8A /* Launch.xib in Resources */,
 				EAEEB056202C6D5900F28C99 /* Settings.bundle in Resources */,
 				EAA6797E202F66490002F2F5 /* Assets.xcassets in Resources */,
-				EA03E21F2031FCEA00D5D9D9 /* Ions in Resources */,
 				EA051A6D2031578000439238 /* ProcessScreen.storyboard in Resources */,
 				EA7EFAC720221A50003ADDA5 /* Main.storyboard in Resources */,
+				EAE9DD61204D9DAA00B2E329 /* Launch.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,6 +554,7 @@
 				EA2D652320418EA000C02F8A /* Common.swift in Sources */,
 				EAEEB051202C595100F28C99 /* Go_Study.xcdatamodeld in Sources */,
 				EA050A362048281A00AC848B /* DetailViewController.swift in Sources */,
+				EAE9DD6D204DACCE00B2E329 /* LocalNotification.swift in Sources */,
 				EACDB5F02024760E00A2C6A8 /* UIResponder-Notice.swift in Sources */,
 				EAFBE9DD2048FFAD00E1E81C /* ThemeManagerProtocol.swift in Sources */,
 				EA2D650E204050A500C02F8A /* ItemTableVIewData.swift in Sources */,
@@ -670,7 +701,7 @@
 		};
 		EA7EFAD120221A50003ADDA5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 026C47FDEFDBFBAF6CA65408 /* Pods-Go Study.debug.xcconfig */;
+			baseConfigurationReference = 7674D67B9372A55A0CAD02DA /* Pods-Go Study.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Go Study/Go Study.entitlements";
@@ -688,7 +719,7 @@
 		};
 		EA7EFAD220221A50003ADDA5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CC88254E9879A2CAA3B1FE4B /* Pods-Go Study.release.xcconfig */;
+			baseConfigurationReference = 792710ADCD9984A878A0D75C /* Pods-Go Study.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Go Study/Go Study.entitlements";

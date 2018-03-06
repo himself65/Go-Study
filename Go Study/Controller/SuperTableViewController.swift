@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import os.log
 
 class SuperTableViewController: UITableViewController, ThemeManagerProtocol {
     
@@ -22,6 +23,7 @@ class SuperTableViewController: UITableViewController, ThemeManagerProtocol {
     
     @objc func handelNotification(notification: NSNotification) {
         guard let theme = notification.object as? ThemeProtocol else {
+            os_log("通知中无法接收theme", type: .error)
             return
         }
         self.navigationController?.navigationBar.barTintColor = theme.PrimaryColor

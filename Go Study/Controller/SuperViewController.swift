@@ -8,6 +8,9 @@
 
 import UIKit
 import os.log
+// MARK - Google AdMob Framework
+//import GoogleMobileAds
+
 
 // MARK - SuperViewController is diffenent from the SuperTableViewController
 class SuperViewController: UIViewController, ThemeManagerProtocol {
@@ -30,7 +33,7 @@ class SuperViewController: UIViewController, ThemeManagerProtocol {
     
     @objc func handelNotification(notification: NSNotification) {
         guard let theme = notification.object as? ThemeProtocol else {
-            os_log("通知中无法接收theme")
+            os_log("通知中无法接收theme", type: .error)
             return
         }
         
