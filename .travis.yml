@@ -1,3 +1,4 @@
 language: swift
 script: true
 xcode_workspace: Go Study.xcworkspace
+podfile: Podfile
