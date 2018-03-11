@@ -29,6 +29,10 @@ class SuperTableViewController: UITableViewController, ThemeManagerProtocol {
         self.navigationController?.navigationBar.barTintColor = theme.PrimaryColor
         self.navigationController?.navigationBar.tintColor = theme.Text_Icon
         self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor : theme.Text_Icon]
+        
+        // MARK - ToolBar Theme
+        self.navigationController?.toolbar.tintColor = theme.DarkPrimaryColor
+        self.navigationController?.toolbar.backgroundColor = theme.Text_Icon
     }
     
     

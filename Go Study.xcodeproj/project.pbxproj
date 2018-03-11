@@ -26,6 +26,7 @@
 		EA2D65292041AAB400C02F8A /* SettingDataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2D65272041AAB400C02F8A /* SettingDataTableViewController.swift */; };
 		EA44AA4D2042FCFF00BCC7D6 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA44AA4C2042FCFF00BCC7D6 /* ChartViewController.swift */; };
 		EA44AAC620444EC400BCC7D6 /* NewItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA44AAC520444EC400BCC7D6 /* NewItemViewController.swift */; };
+		EA7825682054C52B00E5B2F8 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA7825672054C52B00E5B2F8 /* Launch Screen.storyboard */; };
 		EA7EFAC020221A50003ADDA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7EFABF20221A50003ADDA5 /* AppDelegate.swift */; };
 		EA7EFAC720221A50003ADDA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA7EFAC520221A50003ADDA5 /* Main.storyboard */; };
 		EA95CA262031AC36001BAE6A /* CoreDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA95CA252031AC36001BAE6A /* CoreDataHandler.swift */; };
@@ -35,7 +36,6 @@
 		EACDB5F42025E67400A2C6A8 /* KeyBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACDB5F32025E67400A2C6A8 /* KeyBoard.swift */; };
 		EADF569A20327DA4001E2226 /* UINavigationBar-HideLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADF569920327DA3001E2226 /* UINavigationBar-HideLine.swift */; };
 		EADF8BC4203073D500BFCDF0 /* UIViewController-MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADF8BC3203073D500BFCDF0 /* UIViewController-MainViewController.swift */; };
-		EAE9DD61204D9DAA00B2E329 /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAE9DD60204D9DAA00B2E329 /* Launch.storyboard */; };
 		EAE9DD65204DA08100B2E329 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA1ED9D5204AD45B0087B039 /* Charts.framework */; };
 		EAE9DD66204DA08100B2E329 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EA1ED9D5204AD45B0087B039 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EAE9DD6D204DACCE00B2E329 /* LocalNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE9DD6C204DACCE00B2E329 /* LocalNotification.swift */; };
@@ -98,6 +98,7 @@
 		EA2D65272041AAB400C02F8A /* SettingDataTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingDataTableViewController.swift; sourceTree = "<group>"; };
 		EA44AA4C2042FCFF00BCC7D6 /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
 		EA44AAC520444EC400BCC7D6 /* NewItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemViewController.swift; sourceTree = "<group>"; };
+		EA7825672054C52B00E5B2F8 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		EA7EFABC20221A50003ADDA5 /* Go Study.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Go Study.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA7EFABF20221A50003ADDA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA7EFAC620221A50003ADDA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -112,7 +113,6 @@
 		EACE767220222B5C0009154C /* Go Study.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Go Study.entitlements"; sourceTree = "<group>"; };
 		EADF569920327DA3001E2226 /* UINavigationBar-HideLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationBar-HideLine.swift"; sourceTree = "<group>"; };
 		EADF8BC3203073D500BFCDF0 /* UIViewController-MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController-MainViewController.swift"; sourceTree = "<group>"; };
-		EAE9DD60204D9DAA00B2E329 /* Launch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Launch.storyboard; sourceTree = "<group>"; };
 		EAE9DD6C204DACCE00B2E329 /* LocalNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotification.swift; sourceTree = "<group>"; };
 		EAEEB050202C595100F28C99 /* StydyData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StydyData.xcdatamodel; sourceTree = "<group>"; };
 		EAEEB055202C6D5900F28C99 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
@@ -261,7 +261,7 @@
 			children = (
 				EA7EFAC520221A50003ADDA5 /* Main.storyboard */,
 				EA051A6C2031578000439238 /* ProcessScreen.storyboard */,
-				EAE9DD60204D9DAA00B2E329 /* Launch.storyboard */,
+				EA7825672054C52B00E5B2F8 /* Launch Screen.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -462,8 +462,8 @@
 				EAEEB056202C6D5900F28C99 /* Settings.bundle in Resources */,
 				EAA6797E202F66490002F2F5 /* Assets.xcassets in Resources */,
 				EA051A6D2031578000439238 /* ProcessScreen.storyboard in Resources */,
+				EA7825682054C52B00E5B2F8 /* Launch Screen.storyboard in Resources */,
 				EA7EFAC720221A50003ADDA5 /* Main.storyboard in Resources */,
-				EAE9DD61204D9DAA00B2E329 /* Launch.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

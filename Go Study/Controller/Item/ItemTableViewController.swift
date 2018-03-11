@@ -7,47 +7,38 @@
 //
 
 import UIKit
+import os.log
 
 class ItemTableViewController: SuperTableViewController {
     
-    var data = Array<String>()
-    var indexPath: IndexPath?
+    @IBOutlet var itemTableview: UITableView!
     
+    var data: [[String]] = Array<[String]>()
+    
+    var indexPath: IndexPath?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        initNavigationBar()
+        data = loadData_Test()
     }
     
-    private func initNavigationBar() {
-        let theme = ThemeManager.shareInstance().theme
-        
-        // MARK -- SearchController Attitube
-        if #available(iOS 11.0, *) {
-            let searchController = UISearchController(searchResultsController: nil)
-            searchController.searchBar.placeholder = "搜索"
-            for subView in searchController.searchBar.subviews {
-                subView.backgroundColor = theme.Text_Icon
-            }
-            definesPresentationContext = true
-            self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.defaultPrompt)
-            self.navigationController?.navigationBar.shadowImage = UIImage()
-            self.navigationController?.navigationBar.isTranslucent = true
-            self.navigationItem.searchController = searchController
+//    private func initNavigationBar() {
+//        let theme = ThemeManager.shareInstance().theme
+//
+//    }
+    
+    override func handelNotification(notification: NSNotification) {
+        super.handelNotification(notification: notification)
+        guard let theme = notification.object as? ThemeProtocol else {
+            os_log("通知中无法接收theme", type: .error)
+            return
         }
-        
-        // MARK -- Large Title Attitube
-        //  iOS 11.0
-        if #available(iOS 11.0, *) {
-            self.navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedStringKey.foregroundColor : theme.Text_Icon]
-            self.navigationController?.navigationBar.prefersLargeTitles = true
-        }
-        // TODO 还是有阴影，不知道是不是bug
+        // Tableview Theme
+        self.itemTableview.separatorColor = theme.LightPrimaryColor
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidLoad()
-        data = loadData_Test()
         tableView.reloadData()
     }
     
@@ -62,12 +53,14 @@ class ItemTableViewController: SuperTableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return data[section].count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "detailCell", for: indexPath)
-        cell.textLabel?.text = data[indexPath.row]
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "itemCell", for: indexPath)
+        
+        cell.textLabel?.text = data[indexPath.section][indexPath.row]
         
         return cell
     }
@@ -76,6 +69,13 @@ class ItemTableViewController: SuperTableViewController {
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
+    // MARK -- Header Setting
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        
+        return UIView()
+    }
+    
+    // MARK -- IS CAN EDIT
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return true
     }
@@ -99,5 +99,6 @@ class ItemTableViewController: SuperTableViewController {
 
         return [remove, share, mark]
     }
+    
 
 }
