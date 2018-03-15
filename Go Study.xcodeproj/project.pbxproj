@@ -36,6 +36,7 @@
 		EACDB5F42025E67400A2C6A8 /* KeyBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACDB5F32025E67400A2C6A8 /* KeyBoard.swift */; };
 		EADF569A20327DA4001E2226 /* UINavigationBar-HideLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADF569920327DA3001E2226 /* UINavigationBar-HideLine.swift */; };
 		EADF8BC4203073D500BFCDF0 /* UIViewController-MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADF8BC3203073D500BFCDF0 /* UIViewController-MainViewController.swift */; };
+		EAE8B3FD2056DE3A005CADCF /* TagData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE8B3FC2056DE3A005CADCF /* TagData.swift */; };
 		EAE9DD65204DA08100B2E329 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA1ED9D5204AD45B0087B039 /* Charts.framework */; };
 		EAE9DD66204DA08100B2E329 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EA1ED9D5204AD45B0087B039 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EAE9DD6D204DACCE00B2E329 /* LocalNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE9DD6C204DACCE00B2E329 /* LocalNotification.swift */; };
@@ -113,6 +114,7 @@
 		EACE767220222B5C0009154C /* Go Study.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Go Study.entitlements"; sourceTree = "<group>"; };
 		EADF569920327DA3001E2226 /* UINavigationBar-HideLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationBar-HideLine.swift"; sourceTree = "<group>"; };
 		EADF8BC3203073D500BFCDF0 /* UIViewController-MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController-MainViewController.swift"; sourceTree = "<group>"; };
+		EAE8B3FC2056DE3A005CADCF /* TagData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagData.swift; sourceTree = "<group>"; };
 		EAE9DD6C204DACCE00B2E329 /* LocalNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotification.swift; sourceTree = "<group>"; };
 		EAEEB050202C595100F28C99 /* StydyData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StydyData.xcdatamodel; sourceTree = "<group>"; };
 		EAEEB055202C6D5900F28C99 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
@@ -271,6 +273,7 @@
 			children = (
 				EAEEB04F202C595100F28C99 /* Go_Study.xcdatamodeld */,
 				EA95CA252031AC36001BAE6A /* CoreDataHandler.swift */,
+				EAE8B3FC2056DE3A005CADCF /* TagData.swift */,
 			);
 			name = Model;
 			path = Models;
@@ -490,22 +493,16 @@
 		};
 		8369973849DB1B4B8F57950C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			files = (
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Go Study/Pods-Go Study-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
-				"${BUILT_PRODUCTS_DIR}/ChartsRealm/ChartsRealm.framework",
-				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
-				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChartsRealm.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSCalendar.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -550,6 +547,7 @@
 				EA2D65062040498F00C02F8A /* MainViewController.swift in Sources */,
 				EA44AAC620444EC400BCC7D6 /* NewItemViewController.swift in Sources */,
 				EAF096302047A91D002DF003 /* ThemeProtocol.swift in Sources */,
+				EAE8B3FD2056DE3A005CADCF /* TagData.swift in Sources */,
 				EA050A2E2047F5F700AC848B /* SuperTableViewController.swift in Sources */,
 				EA2D652320418EA000C02F8A /* Common.swift in Sources */,
 				EAEEB051202C595100F28C99 /* Go_Study.xcdatamodeld in Sources */,
@@ -703,11 +701,15 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7674D67B9372A55A0CAD02DA /* Pods-Go Study.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Go Study/Go Study.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N9CDJBSN2N;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Go Study/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(SDKROOT)/Developer/Library/Frameworks $(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Aimona.Go-Study";
@@ -721,11 +723,15 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 792710ADCD9984A878A0D75C /* Pods-Go Study.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Go Study/Go Study.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N9CDJBSN2N;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Go Study/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(SDKROOT)/Developer/Library/Frameworks $(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Aimona.Go-Study";

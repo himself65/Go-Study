@@ -3,4 +3,5 @@ platform :ios, '8.0'
 target 'Go Study' do
 use_frameworks!
 pod 'Google-Mobile-Ads-SDK'
+pod 'FSCalendar'
 end

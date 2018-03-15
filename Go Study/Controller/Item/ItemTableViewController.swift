@@ -13,13 +13,13 @@ class ItemTableViewController: SuperTableViewController {
     
     @IBOutlet var itemTableview: UITableView!
     
-    var data: [[String]] = Array<[String]>()
-    
+    var data = Array<StudyData>()
+    var sortedData = Array<[StudyData]>()
     var indexPath: IndexPath?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        data = loadData_Test()
+        data = loadData()
     }
     
 //    private func initNavigationBar() {
@@ -49,23 +49,24 @@ class ItemTableViewController: SuperTableViewController {
     }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return data.count
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return data[section].count
+        return data.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "itemCell", for: indexPath)
         
-        cell.textLabel?.text = data[indexPath.section][indexPath.row]
+        cell.textLabel?.text = data[indexPath.row].title
         
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
         tableView.deselectRow(at: indexPath, animated: true)
     }
     

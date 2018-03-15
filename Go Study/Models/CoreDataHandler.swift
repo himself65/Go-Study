@@ -20,7 +20,7 @@ extension Common {
 let dateFormat = "EEE, dd MMM yyyy hh:mm:ss +zzzz"
 
 class CoreDataHandler: NSObject {
-    private class func getContent() -> NSManagedObjectContext {
+    class func getContent() -> NSManagedObjectContext {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         return appDelegate.persistentContainer.viewContext
     }
@@ -48,10 +48,9 @@ class CoreDataHandler: NSObject {
             return false
         }
         // Data
-        insertData.endLine = data.endLine
         insertData.info = data.info
-        insertData.tag = data.tag
         insertData.title = data.title
+        insertData.date = data.date
         //
         do {
             try content.save()

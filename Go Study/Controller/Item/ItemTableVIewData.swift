@@ -25,3 +25,11 @@ func loadData_Test() -> [[String]] {
     
     return _data
 }
+
+func loadData() -> [StudyData]
+{
+    guard let data = CoreDataHandler.fetchStudyData() else {
+        fatalError("无法获取数据")
+    }
+    return data
+}
