@@ -13,7 +13,7 @@ struct PomClock {
 }
 
 class AddViewController: SuperViewController {
-
+    
     @IBOutlet weak var timePicker: UIPickerView!
     var duration: Int = userDefault.integer(forKey: "defaultDuration")
     override func viewDidLoad() {
@@ -34,7 +34,7 @@ class AddViewController: SuperViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch segue.identifier {
-        case "start":
+        case "start"?:
             let vc = segue.destination as! ProcessViewController
             let clock = PomClock( duration: self.duration )
             vc.param = clock

@@ -16,6 +16,15 @@
 		EA051A682031555F00439238 /* ProcessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA051A672031555F00439238 /* ProcessViewController.swift */; };
 		EA051A6B2031564100439238 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA051A6A2031564100439238 /* ProgressView.swift */; };
 		EA051A6D2031578000439238 /* ProcessScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA051A6C2031578000439238 /* ProcessScreen.storyboard */; };
+		EA2240E0205AD23300FA8590 /* AAHighchartsLib.js in Resources */ = {isa = PBXBuildFile; fileRef = EA2240D6205AD23300FA8590 /* AAHighchartsLib.js */; };
+		EA2240E1205AD23300FA8590 /* AAHighchartsMore.js in Resources */ = {isa = PBXBuildFile; fileRef = EA2240D7205AD23300FA8590 /* AAHighchartsMore.js */; };
+		EA2240E2205AD23300FA8590 /* AAOptionsConstructor.js in Resources */ = {isa = PBXBuildFile; fileRef = EA2240D8205AD23300FA8590 /* AAOptionsConstructor.js */; };
+		EA2240E3205AD23300FA8590 /* AAFunnel.js in Resources */ = {isa = PBXBuildFile; fileRef = EA2240D9205AD23300FA8590 /* AAFunnel.js */; };
+		EA2240E4205AD23300FA8590 /* AAHighcharts-3d.js in Resources */ = {isa = PBXBuildFile; fileRef = EA2240DA205AD23300FA8590 /* AAHighcharts-3d.js */; };
+		EA2240E5205AD23300FA8590 /* AAChartView.html in Resources */ = {isa = PBXBuildFile; fileRef = EA2240DB205AD23300FA8590 /* AAChartView.html */; };
+		EA2240E6205AD23300FA8590 /* AAChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2240DD205AD23300FA8590 /* AAChartView.swift */; };
+		EA2240E7205AD23300FA8590 /* AAChartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2240DE205AD23300FA8590 /* AAChartModel.swift */; };
+		EA2240E8205AD23300FA8590 /* AASerializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2240DF205AD23300FA8590 /* AASerializable.swift */; };
 		EA2D65062040498F00C02F8A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2D65052040498F00C02F8A /* MainViewController.swift */; };
 		EA2D650C2040502E00C02F8A /* ItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2D650B2040502E00C02F8A /* ItemTableViewController.swift */; };
 		EA2D650E204050A500C02F8A /* ItemTableVIewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2D650D204050A500C02F8A /* ItemTableVIewData.swift */; };
@@ -37,8 +46,6 @@
 		EADF569A20327DA4001E2226 /* UINavigationBar-HideLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADF569920327DA3001E2226 /* UINavigationBar-HideLine.swift */; };
 		EADF8BC4203073D500BFCDF0 /* UIViewController-MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADF8BC3203073D500BFCDF0 /* UIViewController-MainViewController.swift */; };
 		EAE8B3FD2056DE3A005CADCF /* TagData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE8B3FC2056DE3A005CADCF /* TagData.swift */; };
-		EAE9DD65204DA08100B2E329 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA1ED9D5204AD45B0087B039 /* Charts.framework */; };
-		EAE9DD66204DA08100B2E329 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EA1ED9D5204AD45B0087B039 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EAE9DD6D204DACCE00B2E329 /* LocalNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE9DD6C204DACCE00B2E329 /* LocalNotification.swift */; };
 		EAEEB051202C595100F28C99 /* Go_Study.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EAEEB04F202C595100F28C99 /* Go_Study.xcdatamodeld */; };
 		EAEEB056202C6D5900F28C99 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EAEEB055202C6D5900F28C99 /* Settings.bundle */; };
@@ -62,17 +69,6 @@
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EAE9DD67204DA08100B2E329 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				EAE9DD66204DA08100B2E329 /* Charts.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +85,15 @@
 		EA051A6A2031564100439238 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
 		EA051A6C2031578000439238 /* ProcessScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProcessScreen.storyboard; sourceTree = "<group>"; };
 		EA1ED9D5204AD45B0087B039 /* Charts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Charts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA2240D6205AD23300FA8590 /* AAHighchartsLib.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = AAHighchartsLib.js; sourceTree = "<group>"; };
+		EA2240D7205AD23300FA8590 /* AAHighchartsMore.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = AAHighchartsMore.js; sourceTree = "<group>"; };
+		EA2240D8205AD23300FA8590 /* AAOptionsConstructor.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = AAOptionsConstructor.js; sourceTree = "<group>"; };
+		EA2240D9205AD23300FA8590 /* AAFunnel.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = AAFunnel.js; sourceTree = "<group>"; };
+		EA2240DA205AD23300FA8590 /* AAHighcharts-3d.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "AAHighcharts-3d.js"; sourceTree = "<group>"; };
+		EA2240DB205AD23300FA8590 /* AAChartView.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = AAChartView.html; sourceTree = "<group>"; };
+		EA2240DD205AD23300FA8590 /* AAChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AAChartView.swift; sourceTree = "<group>"; };
+		EA2240DE205AD23300FA8590 /* AAChartModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AAChartModel.swift; sourceTree = "<group>"; };
+		EA2240DF205AD23300FA8590 /* AASerializable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AASerializable.swift; sourceTree = "<group>"; };
 		EA2D65052040498F00C02F8A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		EA2D650B2040502E00C02F8A /* ItemTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewController.swift; sourceTree = "<group>"; };
 		EA2D650D204050A500C02F8A /* ItemTableVIewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableVIewData.swift; sourceTree = "<group>"; };
@@ -133,7 +138,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D044ACE2927C9A820E12E2E6 /* Pods_Go_Study.framework in Frameworks */,
-				EAE9DD65204DA08100B2E329 /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +180,38 @@
 				EAF096362047CCDA002DF003 /* UIViewController-Theme.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		EA2240D4205AD23300FA8590 /* AAInfographics */ = {
+			isa = PBXGroup;
+			children = (
+				EA2240D5205AD23300FA8590 /* AAJSFiles */,
+				EA2240DC205AD23300FA8590 /* AAChartCreator */,
+			);
+			path = AAInfographics;
+			sourceTree = "<group>";
+		};
+		EA2240D5205AD23300FA8590 /* AAJSFiles */ = {
+			isa = PBXGroup;
+			children = (
+				EA2240D6205AD23300FA8590 /* AAHighchartsLib.js */,
+				EA2240D7205AD23300FA8590 /* AAHighchartsMore.js */,
+				EA2240D8205AD23300FA8590 /* AAOptionsConstructor.js */,
+				EA2240D9205AD23300FA8590 /* AAFunnel.js */,
+				EA2240DA205AD23300FA8590 /* AAHighcharts-3d.js */,
+				EA2240DB205AD23300FA8590 /* AAChartView.html */,
+			);
+			path = AAJSFiles;
+			sourceTree = "<group>";
+		};
+		EA2240DC205AD23300FA8590 /* AAChartCreator */ = {
+			isa = PBXGroup;
+			children = (
+				EA2240DD205AD23300FA8590 /* AAChartView.swift */,
+				EA2240DE205AD23300FA8590 /* AAChartModel.swift */,
+				EA2240DF205AD23300FA8590 /* AASerializable.swift */,
+			);
+			path = AAChartCreator;
 			sourceTree = "<group>";
 		};
 		EA2D65042040496400C02F8A /* Main */ = {
@@ -300,6 +336,7 @@
 		EA7EFABE20221A50003ADDA5 /* Go Study */ = {
 			isa = PBXGroup;
 			children = (
+				EA2240D4205AD23300FA8590 /* AAInfographics */,
 				EAEEB055202C6D5900F28C99 /* Settings.bundle */,
 				EACE767220222B5C0009154C /* Go Study.entitlements */,
 				EA7EFACD20221A50003ADDA5 /* Info.plist */,
@@ -400,7 +437,6 @@
 				EA051A63203143AD00439238 /* Embed Watch Content */,
 				8369973849DB1B4B8F57950C /* [CP] Embed Pods Frameworks */,
 				CC722D2DD50C16B7C9F39333 /* [CP] Copy Pods Resources */,
-				EAE9DD67204DA08100B2E329 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -462,11 +498,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA2240E1205AD23300FA8590 /* AAHighchartsMore.js in Resources */,
 				EAEEB056202C6D5900F28C99 /* Settings.bundle in Resources */,
+				EA2240E5205AD23300FA8590 /* AAChartView.html in Resources */,
 				EAA6797E202F66490002F2F5 /* Assets.xcassets in Resources */,
+				EA2240E4205AD23300FA8590 /* AAHighcharts-3d.js in Resources */,
 				EA051A6D2031578000439238 /* ProcessScreen.storyboard in Resources */,
 				EA7825682054C52B00E5B2F8 /* Launch Screen.storyboard in Resources */,
+				EA2240E3205AD23300FA8590 /* AAFunnel.js in Resources */,
+				EA2240E2205AD23300FA8590 /* AAOptionsConstructor.js in Resources */,
 				EA7EFAC720221A50003ADDA5 /* Main.storyboard in Resources */,
+				EA2240E0205AD23300FA8590 /* AAHighchartsLib.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -534,11 +576,13 @@
 				EADF569A20327DA4001E2226 /* UINavigationBar-HideLine.swift in Sources */,
 				EACDB5F220249CBB00A2C6A8 /* UIResponder-AlertActionSwift.swift in Sources */,
 				EA050A312047F7FC00AC848B /* ThemeTableViewController.swift in Sources */,
+				EA2240E8205AD23300FA8590 /* AASerializable.swift in Sources */,
 				EA2D65292041AAB400C02F8A /* SettingDataTableViewController.swift in Sources */,
 				EA2D65122041051900C02F8A /* TagTableViewController.swift in Sources */,
 				EADF8BC4203073D500BFCDF0 /* UIViewController-MainViewController.swift in Sources */,
 				EA95CA262031AC36001BAE6A /* CoreDataHandler.swift in Sources */,
 				EA051A6B2031564100439238 /* ProgressView.swift in Sources */,
+				EA2240E6205AD23300FA8590 /* AAChartView.swift in Sources */,
 				EAF096352047AFA1002DF003 /* ThemeManager.swift in Sources */,
 				EAF0962D2047A7AD002DF003 /* UIColor-RGB.swift in Sources */,
 				EA2D6517204113C700C02F8A /* AddViewController.swift in Sources */,
@@ -548,6 +592,7 @@
 				EA44AAC620444EC400BCC7D6 /* NewItemViewController.swift in Sources */,
 				EAF096302047A91D002DF003 /* ThemeProtocol.swift in Sources */,
 				EAE8B3FD2056DE3A005CADCF /* TagData.swift in Sources */,
+				EA2240E7205AD23300FA8590 /* AAChartModel.swift in Sources */,
 				EA050A2E2047F5F700AC848B /* SuperTableViewController.swift in Sources */,
 				EA2D652320418EA000C02F8A /* Common.swift in Sources */,
 				EAEEB051202C595100F28C99 /* Go_Study.xcdatamodeld in Sources */,
@@ -701,7 +746,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7674D67B9372A55A0CAD02DA /* Pods-Go Study.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Go Study/Go Study.entitlements";
 				CODE_SIGN_STYLE = Automatic;
@@ -723,7 +767,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 792710ADCD9984A878A0D75C /* Pods-Go Study.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Go Study/Go Study.entitlements";
 				CODE_SIGN_STYLE = Automatic;
