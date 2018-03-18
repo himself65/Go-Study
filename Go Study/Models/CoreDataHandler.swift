@@ -17,7 +17,7 @@ extension Common {
     }
 }
 
-let dateFormat = "EEE, dd MMM yyyy hh:mm:ss +zzzz"
+let dateFormat = "yyyy MMM dd hh:mm EEE"
 
 class CoreDataHandler: NSObject {
     class func getContent() -> NSManagedObjectContext {
@@ -96,10 +96,8 @@ class CoreDataHandler: NSObject {
             for result in results {
                 content.delete(result)
             }
-            
             do {
                 try content.save()
-                
                 return true
             } catch {
                 fatalError("\(error)")

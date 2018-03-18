@@ -8,9 +8,6 @@
 
 import UIKit
 import os.log
-// MARK - Google AdMob Framework
-//import GoogleMobileAds
-
 
 // MARK - SuperViewController is diffenent from the SuperTableViewController
 class SuperViewController: UIViewController, ThemeManagerProtocol {

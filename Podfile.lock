@@ -1,15 +1,18 @@
 PODS:
-  - FSCalendar (2.7.9)
   - Google-Mobile-Ads-SDK (7.29.0)
+  - PGDatePicker (2.1.0):
+    - PGPickerView
+  - PGPickerView (1.2.6)
 
 DEPENDENCIES:
-  - FSCalendar
   - Google-Mobile-Ads-SDK
+  - PGDatePicker (>= 2.0.6)
 
 SPEC CHECKSUMS:
-  FSCalendar: a04b09f16f811bc92e82f3cf852a15225233b9d5
   Google-Mobile-Ads-SDK: 375bbb821b3df2106c37b74f6b0a97576ddc5f6b
+  PGDatePicker: 7a9a21a829d45205b3a342c76bd1642ea6824e5e
+  PGPickerView: 8fbbf63d0404065a43a495a0115d339455e0f819
 
-PODFILE CHECKSUM: 9f354106c7ece67ddd196e7b1698dfab5a8872ce
+PODFILE CHECKSUM: 77b91f860b6fd913cb83c59a6a70ab3ac5a14eac
 
 COCOAPODS: 1.4.0

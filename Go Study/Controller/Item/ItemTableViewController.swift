@@ -19,13 +19,12 @@ class ItemTableViewController: SuperTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        data = loadData()
+        
     }
     
-//    private func initNavigationBar() {
-//        let theme = ThemeManager.shareInstance().theme
-//
-//    }
+    override func viewWillAppear(_ animated: Bool) {
+        data = loadData()
+    }
     
     override func handelNotification(notification: NSNotification) {
         super.handelNotification(notification: notification)
@@ -35,11 +34,6 @@ class ItemTableViewController: SuperTableViewController {
         }
         // Tableview Theme
         self.itemTableview.separatorColor = theme.LightPrimaryColor
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidLoad()
-        tableView.reloadData()
     }
     
     
@@ -65,6 +59,17 @@ class ItemTableViewController: SuperTableViewController {
         return cell
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showData" {
+            // TODO
+            let navController = segue.destination as! DetailViewController
+            let d = data[(indexPath?.row)!]
+            navController.title = d.title
+            navController.name = d.title
+            navController.date = d.date
+        }
+    }
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         tableView.deselectRow(at: indexPath, animated: true)
@@ -76,29 +81,36 @@ class ItemTableViewController: SuperTableViewController {
         return UIView()
     }
     
-    // MARK -- IS CAN EDIT
+    // MARK -- Can edit
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return true
     }
     
     override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
 
-        let mark = UITableViewRowAction(style: .normal, title: " 标记") { action, index in
-            print("mark button tapped")
-        }
-        mark.backgroundColor = .orange
+//        let mark = UITableViewRowAction(style: .normal, title: " 标记") { action, index in
+//            print("mark button tapped")
+//        }
+//        mark.backgroundColor = .orange
+//
+//        let share = UITableViewRowAction(style: .normal, title: "分享") { action, index in
+//            print("share button tapped")
+//        }
+//        share.backgroundColor = .blue
 
-        let share = UITableViewRowAction(style: .normal, title: "分享") { action, index in
-            print("share button tapped")
-        }
-        share.backgroundColor = .blue
-
-        let remove = UITableViewRowAction(style: .default, title: "删除") { action, index in print("delete button tapped")
-            
+        let remove = UITableViewRowAction(style: .default, title: "删除") { action, index in
+            let item = self.data[index.row]
+            self.data.remove(at: index.row)
+            if CoreDataHandler.deleteStudyData("id=\(item.id)") == false {
+                self.noticeError("错误")
+            } else {
+                self.noticeTop("删除成功", autoClear: true, autoClearTime: 1)
+                self.tableView.reloadData()
+            }
         }
         remove.backgroundColor = .red
 
-        return [remove, share, mark]
+        return [remove]
     }
     
 
